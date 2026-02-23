@@ -7,6 +7,8 @@ pandas
 numpy
 scikit-learn
 scipy
-pickleshare
-cloudpickle
-matplotlib-inline
+xhtml2pdf
+reportlab
+SQLAlchemy
+werkzeug
+python-dateutil
