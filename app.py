@@ -61,8 +61,11 @@ class Prediction(db.Model):
     predicted_drug = db.Column(db.String(100))
     confidence = db.Column(db.Float)
 
-with app.app_context():
-    db.create_all()
+try:
+    with app.app_context():
+        db.create_all()
+except Exception as e:
+    print(f"Database initialization error: {e}")
 
 # ----------------------------
 # ML Components
