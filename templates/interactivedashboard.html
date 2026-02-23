@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- Header -->
+    <div class="row mb-5 animate-fade-in">
+        <div class="col-lg-8 mx-auto text-center">
+            <span class="badge bg-soft-accent px-3 py-2 rounded-pill fw-bold text-uppercase ls-1 mb-3">Live Analytics V2.0</span>
+            <h1 class="display-5 fw-bold mb-3">System Performance Hub</h1>
+            <p class="lead text-muted">Real-time validation metrics calculated against the <code>drug200.csv</code> clinical dataset.</p>
+        </div>
+    </div>
+
+    <!-- Live Performance Cards -->
+    <div class="row g-4 animate-fade-in mb-5">
+        {% set rf = metrics.get('Random Forest', metrics.get('Decision Tree')) %}
+        <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 p-4 text-center position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle-x bg-accent" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
+                <div class="mb-3 text-accent"><i class="fa-solid fa-bullseye fa-3x"></i></div>
+                <h2 class="fw-bold mb-1">{{ rf.accuracy }}%</h2>
+                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">Global Accuracy</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 p-4 text-center position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle-x bg-primary" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
+                <div class="mb-3 text-primary"><i class="fa-solid fa-filter fa-3x"></i></div>
+                <h2 class="fw-bold mb-1">{{ rf.precision }}%</h2>
+                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">Precision Score</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 p-4 text-center position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle-x bg-info" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
+                <div class="mb-3 text-info"><i class="fa-solid fa-dna fa-3x"></i></div>
+                <h2 class="fw-bold mb-1">{{ rf.f1 }}%</h2>
+                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">F1-Score</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 p-4 text-center d-flex flex-column justify-content-center bg-primary text-white">
+                <div class="mb-3 opacity-75"><i class="fa-solid fa-server fa-3x"></i></div>
+                <h3 class="fw-bold mb-1">Active</h3>
+                <p class="opacity-75 small fw-bold text-uppercase ls-1 mb-0">Engine Status</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Analytics Section -->
+    <div class="row g-4 animate-fade-in">
+        <!-- Interactive Chart -->
+        <div class="col-lg-8">
+            <div class="glass-card h-100 p-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="fw-bold mb-0">Model Comparison</h4>
+                    <span class="badge bg-soft-primary rounded-pill"><i class="fa-solid fa-chart-simple me-2"></i>Live Data</span>
+                </div>
+                <div class="chart-container" style="position: relative; height:350px;">
+                    <canvas id="accuracyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparative Table -->
+        <div class="col-lg-4">
+            <div class="glass-card h-100 p-0 overflow-hidden">
+                <div class="p-4 border-bottom bg-light">
+                    <h5 class="fw-bold mb-0">Validation Matrix</h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="bg-white">
+                            <tr>
+                                <th class="ps-4">Model</th>
+                                <th class="text-center">Acc.</th>
+                                <th class="pe-4 text-end">Recall</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for name, val in metrics.items() %}
+                            <tr>
+                                <td class="ps-4 fw-bold text-primary small">{{ name }}</td>
+                                <td class="text-center"><span class="badge bg-soft-accent">{{ val.accuracy }}%</span></td>
+                                <td class="pe-4 text-end fw-bold text-muted small">{{ val.recall }}%</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-4 bg-soft-primary mt-auto">
+                    <p class="smaller mb-0 opacity-75">
+                        <i class="fa-solid fa-circle-info me-2"></i> metrics updated dynamically on page load.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('accuracyChart').getContext('2d');
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.color = '#64748b';
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: {{ metrics.keys() | list | safe }},
+        datasets: [{
+            label: 'Accuracy',
+            data: [{% for name, val in metrics.items() %}{{ val.accuracy }},{% endfor %}],
+            backgroundColor: '#2ECC71',
+            borderRadius: 6,
+            barPercentage: 0.6
+        }, {
+            label: 'F1-Score',
+            data: [{% for name, val in metrics.items() %}{{ val.f1 }},{% endfor %}],
+            backgroundColor: '#34495E',
+            borderRadius: 6,
+            barPercentage: 0.6
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'top', align: 'end', labels: { usePointStyle: true, boxWidth: 8 } }
+        },
+        scales: {
+            y: { beginAtZero: true, max: 100, grid: { borderDash: [4, 4], color: '#f1f5f9' } },
+            x: { grid: { display: false } }
+        }
+    }
+});
+</script>
+{% endblock %}

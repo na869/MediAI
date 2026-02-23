@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5 mt-lg-5">
+    <div class="row justify-content-center">
+        <div class="col-xl-10 reveal">
+            <div class="premium-card p-0 overflow-hidden border-0 shadow-lg">
+                <div class="row g-0">
+                    <!-- Tech Sidebar -->
+                    <div class="col-lg-4 bg-primary text-white p-5 d-flex flex-column">
+                        <div class="mb-5">
+                            <div class="bg-accent text-white p-3 rounded-4 d-inline-block mb-4 shadow-lg">
+                                <i class="fa-solid fa-microscope fa-2x"></i>
+                            </div>
+                            <h2 class="fw-800">Advanced Diagnostic Engine</h2>
+                            <p class="opacity-75 small">Our AI processes clinical symptoms and vital vectors to autonomously determine the patient's condition and optimal treatment path.</p>
+                        </div>
+                        
+                        <div class="mt-auto space-y-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
+                                <span class="smaller fw-bold text-uppercase ls-1">Automatic Diagnosis</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
+                                <span class="smaller fw-bold text-uppercase ls-1">Multi-Model Ensemble</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
+                                <span class="smaller fw-bold text-uppercase ls-1">XAI Attribution</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Form -->
+                    <div class="col-lg-8 p-5 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <div>
+                                <h3 class="fw-800 mb-1">Clinical Assessment</h3>
+                                <p class="text-slate small mb-0">Input patient data for AI-driven analysis</p>
+                            </div>
+                            <span class="stat-pill">SYSTEM V3.0</span>
+                        </div>
+
+                        <form method="POST" action="">
+                            {{ form.hidden_tag() }}
+
+                            <div class="row g-4 mb-5">
+                                <div class="col-12">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Patient Full Name</label>
+                                    {{ form.patient_name(class="form-control", placeholder="Full Legal Name") }}
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Current Age</label>
+                                    {{ form.age(class="form-control", placeholder="Years") }}
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Biological Gender</label>
+                                    {{ form.sex(class="form-select") }}
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Blood Pressure Level</label>
+                                    {{ form.bp(class="form-select") }}
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Cholesterol Profile</label>
+                                    {{ form.cholesterol(class="form-select") }}
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Na to K Ratio</label>
+                                    {{ form.na_to_k(class="form-control", placeholder="e.g. 15.6") }}
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <label class="form-label small fw-800 text-slate text-uppercase ls-1 mb-3">Reported Symptoms (AI Diagnostic Input)</label>
+                                <div class="symptom-grid">
+                                    {% for value, label in form.symptoms.choices %}
+                                    <div class="form-check custom-check">
+                                        <input class="form-check-input d-none" type="checkbox" name="symptoms" value="{{ value }}" id="symp_{{ value }}">
+                                        <label class="form-check-label symptom-tag" for="symp_{{ value }}">
+                                            {{ label }}
+                                        </label>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-premium btn-accent w-100 py-4 shadow-lg">
+                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Execute Autonomous Analysis
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .symptom-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .symptom-tag {
+        display: inline-block;
+        padding: 0.6rem 1.25rem;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 100px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: #475569;
+    }
+    .form-check-input:checked + .symptom-tag {
+        background: var(--brand-accent);
+        border-color: var(--brand-accent);
+        color: white;
+        box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+    }
+    .symptom-tag:hover {
+        background: #e2e8f0;
+    }
+</style>
+{% endblock %}

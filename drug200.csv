@@ -1,0 +1,1033 @@
+Age,Sex,BP,Cholesterol,Na_to_K,Drug,Reason
+23,F,HIGH,HIGH,25.355,Mirtazapine,Depression
+47,M,LOW,HIGH,13.093,Mesalamine,"Crohn's Disease, Maintenance"
+47,M,LOW,HIGH,10.114,Mesalamine,Urinary Tract Infection
+28,F,NORMAL,HIGH,7.798,Mesalamine,Weight Loss
+61,F,LOW,HIGH,18.043,Mesalamine,Birth Control
+22,F,NORMAL,HIGH,8.607,Mesalamine,Keratosis
+49,F,NORMAL,HIGH,16.275,Mesalamine,Birth Control
+41,M,LOW,HIGH,11.037,Mesalamine,Migraine Prevention
+60,M,NORMAL,HIGH,15.171,Mesalamine,Opiate Withdrawal
+43,M,LOW,NORMAL,19.368,Mesalamine,Birth Control
+47,F,LOW,HIGH,11.767,Mesalamine,Hot Flashes
+34,F,HIGH,NORMAL,19.199,Miconazole,Vaginal Yeast Infection
+43,M,LOW,HIGH,15.376,Belviq,Weight Loss
+74,F,LOW,HIGH,20.942,Seroquel,Schizoaffective Disorde
+50,F,NORMAL,HIGH,12.703,Ambien,Insomnia
+16,F,HIGH,NORMAL,15.516,Nuvigil,Narcolepsy
+69,M,LOW,NORMAL,11.455,Chantix,Smoking Cessation
+43,M,HIGH,HIGH,13.972,Chantix,Acne
+23,M,LOW,HIGH,7.298,Chantix,Bipolar Disorde
+32,F,HIGH,NORMAL,25.974,Chantix,Urinary Tract Infection
+57,M,LOW,NORMAL,19.128,Trazodone,Insomnia
+63,M,NORMAL,HIGH,25.917,EnteraGam,Irritable Bowel Syndrome
+47,M,LOW,NORMAL,30.568,Aripiprazole,Bipolar Disorde
+48,F,LOW,HIGH,15.036,Cyclosporine,Keratoconjunctivitis Sicca
+33,F,LOW,HIGH,33.486,Oxybutynin,Hyperhidrosis
+28,F,HIGH,NORMAL,18.809,Lurasidone,Bipolar Disorde
+31,M,HIGH,HIGH,30.366,Clonazepam,Panic Disorde
+49,F,NORMAL,NORMAL,9.381,Ciclopirox,"Onychomycosis, Fingernail"
+39,F,LOW,NORMAL,22.697,Sodium oxybate,Narcolepsy
+45,M,LOW,HIGH,17.951,Lamotrigine,Bipolar Disorde
+18,F,NORMAL,NORMAL,8.75,Lamotrigine,Birth Control
+74,M,HIGH,HIGH,9.567,Lamotrigine,Rosacea
+49,M,LOW,NORMAL,11.014,Lamotrigine,Bowel Preparation
+65,F,HIGH,NORMAL,31.876,Lamotrigine,"Constipation, Drug Induced"
+53,M,NORMAL,HIGH,14.133,Lamotrigine,"Constipation, Drug Induced"
+46,M,NORMAL,NORMAL,7.285,Lamotrigine,"Diabetes, Type 2"
+32,M,HIGH,NORMAL,9.445,Lamotrigine,Pain
+39,M,LOW,NORMAL,13.938,Lamotrigine,Birth Control
+39,F,NORMAL,NORMAL,9.709,Escitalopram,Depression
+15,M,NORMAL,HIGH,9.084,Tesamorelin,Lipodystrophy
+73,F,NORMAL,HIGH,19.221,Campral,Alcohol Dependence
+58,F,HIGH,NORMAL,14.239,Gabapentin,Bipolar Disorde
+50,M,NORMAL,NORMAL,15.79,Levonorgestrel,Emergency Contraception
+23,M,NORMAL,HIGH,12.26,Aubra,Birth Control
+50,F,NORMAL,NORMAL,12.295,Plan B One-Step,Emergency Contraception
+66,F,NORMAL,NORMAL,8.107,Ethinyl estradiol / etonogestrel,Birth Control
+37,F,HIGH,HIGH,13.091,Microgestin Fe 1.5 / 30,Birth Control
+68,M,LOW,HIGH,10.291,Wellbutrin,Major Depressive Disorde
+23,M,NORMAL,HIGH,31.686,Clonazepam,Anxiety
+28,F,LOW,HIGH,19.796,Benzoyl peroxide / clindamycin,Acne
+58,F,HIGH,HIGH,19.416,Etonogestrel,Birth Control
+67,M,NORMAL,NORMAL,10.898,Miconazole,Vaginal Yeast Infection
+62,M,LOW,NORMAL,27.183,Nitrofurantoin,Bladder Infection
+24,F,HIGH,NORMAL,18.457,Etonogestrel,Birth Control
+68,F,HIGH,NORMAL,10.189,Ortho Tri-Cyclen Lo,Birth Control
+26,F,LOW,HIGH,14.16,Tamsulosin,Benign Prostatic Hyperplasia
+65,M,HIGH,NORMAL,11.34,Tofacitinib,Rheumatoid Arthritis
+40,M,HIGH,HIGH,27.826,Cryselle,Endometriosis
+60,M,NORMAL,NORMAL,10.091,Amphetamine / dextroamphetamine,ADHD
+34,M,HIGH,HIGH,18.703,Clindamycin,Acne
+38,F,LOW,NORMAL,29.875,Pramipexole,Restless Legs Syndrome
+24,M,HIGH,NORMAL,9.475,Skyla,Birth Control
+67,M,LOW,NORMAL,20.693,Lastacaft,"Conjunctivitis, Allergic"
+45,M,LOW,NORMAL,8.37,Effexor XR,Anxiety
+60,F,HIGH,HIGH,13.303,Nifedipine,Raynaud's Syndrome
+68,F,NORMAL,NORMAL,27.05,Lurasidone,Schizophrenia
+29,M,HIGH,HIGH,12.856,Afrezza,"Diabetes, Type 1"
+17,M,NORMAL,NORMAL,10.832,Zoloft,Depression
+54,M,NORMAL,HIGH,24.658,Ziprasidone,Schizophrenia
+18,F,HIGH,NORMAL,24.276,Bactrim,Kidney Infections
+70,M,HIGH,HIGH,13.967,Ethinyl estradiol / norethindrone,Birth Control
+28,F,NORMAL,HIGH,19.675,Sertraline,Major Depressive Disorde
+24,F,NORMAL,HIGH,10.605,Aluminum chloride hexahydrate,Hyperhidrosis
+41,F,NORMAL,NORMAL,22.905,Effexor XR,Depression
+31,M,HIGH,NORMAL,17.069,ParaGard,Birth Control
+26,M,LOW,NORMAL,20.909,Pregabalin,Generalized Anxiety Disorde
+36,F,HIGH,HIGH,11.198,Ethinyl estradiol / levonorgestrel,Birth Control
+26,F,HIGH,NORMAL,19.161,Ultram,Pain
+19,F,HIGH,HIGH,13.313,Phentermine,Obesity
+32,F,LOW,NORMAL,10.84,Venlafaxine,Depression
+60,M,HIGH,HIGH,13.934,Campral,Alcohol Dependence
+64,M,NORMAL,HIGH,7.761,Venlafaxine,Depression
+32,F,LOW,HIGH,9.712,Levonorgestrel,Emergency Contraception
+38,F,HIGH,NORMAL,11.326,BuSpar,Anxiety
+47,F,LOW,HIGH,10.067,Acetaminophen / hydrocodone,Pain
+59,M,HIGH,HIGH,13.935,Aviane,Birth Control
+51,F,NORMAL,HIGH,13.597,Inderal,Migraine Prevention
+69,M,LOW,HIGH,15.478,Promethazine,Nausea/Vomiting
+37,F,HIGH,NORMAL,23.091,Tioconazole,Vaginal Yeast Infection
+50,F,NORMAL,NORMAL,17.211,Orthovisc,Osteoarthritis
+62,M,NORMAL,HIGH,16.594,Implanon,Birth Control
+41,M,HIGH,NORMAL,15.156,Marezine,Motion Sickness
+29,F,HIGH,HIGH,29.45,Levonorgestrel,Birth Control
+42,F,LOW,NORMAL,29.271,Aripiprazole,Bipolar Disorde
+56,M,LOW,HIGH,15.015,Minoxidil,High Blood Pressure
+36,M,LOW,NORMAL,11.424,Humira,Psoriatic Arthritis
+58,F,LOW,HIGH,38.247,"Insulin inhalation, rapid acting","Diabetes, Type 1"
+56,F,HIGH,HIGH,25.395,Acetaminophen / hydrocodone,Pain
+20,M,HIGH,NORMAL,35.639,Phenazopyridine,Interstitial Cystitis
+15,F,HIGH,NORMAL,16.725,Levonorgestrel,Birth Control
+31,M,HIGH,NORMAL,11.871,Clonidine,ADHD
+45,F,HIGH,HIGH,12.854,Ethinyl estradiol / norgestimate,Birth Control
+28,F,LOW,HIGH,13.127,Nicoderm CQ,Smoking Cessation
+56,M,NORMAL,HIGH,8.966,Levonorgestrel,Emergency Contraception
+22,M,HIGH,NORMAL,28.294,Celecoxib,Osteoarthritis
+37,M,LOW,NORMAL,8.968,Fluoxetine,Major Depressive Disorde
+22,M,NORMAL,HIGH,11.953,Topamax,Migraine Prevention
+42,M,LOW,HIGH,20.013,Depakote,Bipolar Disorde
+72,M,HIGH,NORMAL,9.677,Riboflavin,Migraine Prevention
+23,M,NORMAL,HIGH,16.85,Lo Loestrin Fe,Birth Control
+50,M,HIGH,HIGH,7.49,Copper,Birth Control
+47,F,NORMAL,NORMAL,6.683,Drospirenone / estradiol,Postmenopausal Symptoms
+35,M,LOW,NORMAL,9.17,Bupropion,Depression
+65,F,LOW,NORMAL,13.769,Bacitracin / neomycin / polymyxin b,Bacterial Skin Infection
+20,F,NORMAL,NORMAL,9.281,Phentermine,Weight Loss
+51,M,HIGH,HIGH,18.295,Yaz,Birth Control
+67,M,NORMAL,NORMAL,9.514,Copper,Birth Control
+40,F,NORMAL,HIGH,10.103,Amitriptyline,ibromyalgia
+32,F,HIGH,NORMAL,10.292,Jolessa,Birth Control
+61,F,HIGH,HIGH,25.475,Guaifenesin / pseudoephedrine,Cough and Nasal Congestion
+28,M,NORMAL,HIGH,27.064,Oxycodone,Pain
+15,M,HIGH,NORMAL,17.206,Nexplanon,Birth Control
+34,M,NORMAL,HIGH,22.456,Bupropion,Depression
+36,F,NORMAL,HIGH,16.753,Brisdelle,Hot Flashes
+53,F,HIGH,NORMAL,12.495,Bupropion,Smoking Cessation
+19,F,HIGH,NORMAL,25.969,Beyaz,Acne
+66,M,HIGH,HIGH,16.347,Lo Loestrin Fe,Birth Control
+35,M,NORMAL,NORMAL,7.845,Ethinyl estradiol / norgestimate,Birth Control
+47,M,LOW,NORMAL,33.542,Yasmin,Acne
+32,F,NORMAL,HIGH,7.477,Bupropion,ADHD
+70,F,NORMAL,HIGH,20.489,Zoloft,Depression
+52,M,LOW,NORMAL,32.922,Nucynta ER,Diabetic Peripheral Neuropathy
+49,M,LOW,NORMAL,13.598,Prozac,Major Depressive Disorde
+24,M,NORMAL,HIGH,25.786,BuSpar,Anxiety
+42,F,HIGH,HIGH,21.036,Kariva,Birth Control
+74,M,LOW,NORMAL,11.939,Escitalopram,Depression
+55,F,HIGH,HIGH,10.977,Microgestin Fe 1 / 20,12</span> users found this comment helpful.
+35,F,HIGH,HIGH,12.894,Liraglutide,"Diabetes, Type 2"
+51,M,HIGH,NORMAL,11.343,Sutent,Renal Cell Carcinoma
+69,F,NORMAL,HIGH,10.065,Ethinyl estradiol / norethindrone,Birth Control
+49,M,HIGH,NORMAL,6.269,Tramadol,Pain
+64,F,LOW,NORMAL,25.741,Tylenol with Codeine #3,Pain
+60,M,HIGH,NORMAL,8.621,BuSpar,Panic Disorde
+74,M,HIGH,NORMAL,15.436,Magnesium citrate,Constipation
+39,M,HIGH,HIGH,9.664,Tioconazole,Vaginal Yeast Infection
+61,M,NORMAL,HIGH,9.443,Depo-Provera,Birth Control
+37,F,LOW,NORMAL,12.006,Drospirenone / ethinyl estradiol,
+26,F,HIGH,NORMAL,12.307,Safyral,Birth Control
+61,F,LOW,NORMAL,7.34,Levonorgestrel,Emergency Contraception
+22,M,LOW,HIGH,8.151,Effexor XR,Depression
+49,M,HIGH,NORMAL,8.7,Desyrel,Insomnia
+68,M,HIGH,HIGH,11.009,Glyburide,"Diabetes, Type 2"
+55,M,NORMAL,NORMAL,7.261,Escitalopram,Generalized Anxiety Disorde
+72,F,LOW,NORMAL,14.642,Aldesleukin,Renal Cell Carcinoma
+37,M,LOW,NORMAL,16.724,Zoloft,Social Anxiety Disorde
+49,M,LOW,HIGH,10.537,Desvenlafaxine,Depression
+31,M,HIGH,NORMAL,11.227,Levonorgestrel,
+53,M,LOW,HIGH,22.963,Drospirenone / ethinyl estradiol,Birth Control
+59,F,LOW,HIGH,10.444,Phentermine / topiramate,Obesity
+34,F,LOW,NORMAL,12.923,Pristiq,Major Depressive Disorde
+30,F,NORMAL,HIGH,10.443,Lurasidone,Bipolar Disorde
+57,F,HIGH,NORMAL,9.945,Miconazole,Vaginal Yeast Infection
+43,M,NORMAL,NORMAL,12.859,Acamprosate,Alcohol Dependence
+21,F,HIGH,NORMAL,28.632,Spironolactone,Acne
+16,M,HIGH,NORMAL,19.007,Doxylamine / pyridoxine,Nausea/Vomiting of Pregnancy
+38,M,LOW,HIGH,18.295,Demerol,Pain
+58,F,LOW,HIGH,26.645,Vyvanse,Binge Eating Disorde
+57,F,NORMAL,HIGH,14.216,Depo-Provera,Birth Control
+51,F,LOW,NORMAL,23.003,Sovaldi,Hepatitis C
+20,F,HIGH,HIGH,11.262,Sertraline,Depression
+28,F,NORMAL,HIGH,12.879,Motrin IB,Back Pain
+45,M,LOW,NORMAL,10.017,Valacyclovir,Cold Sores
+39,F,NORMAL,NORMAL,17.225,Buprenorphine / naloxone,Opiate Dependence
+41,F,LOW,NORMAL,18.739,Metoprolol,Heart Attack
+42,M,HIGH,NORMAL,12.766,Pristiq,Depression
+73,F,HIGH,HIGH,18.348,Montelukast,Asthma
+48,M,HIGH,NORMAL,10.446,Dextromethorphan,Cough
+25,M,NORMAL,HIGH,19.011,Levitra,Erectile Dysfunction
+39,M,NORMAL,HIGH,15.969,Restoril,Insomnia
+67,F,NORMAL,HIGH,15.891,Azathioprine,Autoimmune Hepatitis
+22,F,HIGH,NORMAL,22.818,Adapalene / benzoyl peroxide,Acne
+59,F,NORMAL,HIGH,13.884,Linzess,"Constipation, Chronic"
+20,F,LOW,NORMAL,11.686,Levetiracetam,Seizures
+36,F,HIGH,NORMAL,15.49,Ziana,Acne
+18,F,HIGH,HIGH,37.188,Suboxone,Opiate Dependence
+57,F,NORMAL,NORMAL,25.893,Nexplanon,Birth Control
+70,M,HIGH,HIGH,9.849,Tinidazole,Bacterial Vaginitis
+47,M,HIGH,HIGH,10.403,Diazepam,Not Listed / Othe
+65,M,HIGH,NORMAL,34.997,Spironolactone,Acne
+64,M,HIGH,NORMAL,20.932,Quetiapine,Bipolar Disorde
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Headache
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Birth Control
+72,M,LOW,HIGH,16.31,Estradiol,Postmenopausal Symptoms
+72,M,LOW,HIGH,6.769,Gabapentin,ibromyalgia
+46,F,HIGH,HIGH,34.686,ParaGard,Birth Control
+56,F,LOW,HIGH,11.567,Propofol,Anesthesia
+16,M,LOW,HIGH,12.006,Depo-Provera,Birth Control
+52,M,NORMAL,HIGH,9.894,Propranolol,mance Anxiety
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,Acne
+40,F,LOW,NORMAL,11.349,Adapalene / benzoyl peroxide,Menstrual Disorders
+23,F,HIGH,HIGH,25.355,Mirtazapine,Pneumonia
+47,M,LOW,HIGH,13.093,Mesalamine,Depression
+47,M,LOW,HIGH,10.114,Mesalamine,Acne
+28,F,NORMAL,HIGH,7.798,Mesalamine,Depression
+61,F,LOW,HIGH,18.043,Mesalamine,Pain
+22,F,NORMAL,HIGH,8.607,Mesalamine,Depression
+49,F,NORMAL,HIGH,16.275,Mesalamine,Generalized Anxiety Disorde
+41,M,LOW,HIGH,11.037,Mesalamine,"Constipation, Acute"
+60,M,NORMAL,HIGH,15.171,Mesalamine,Anxiety
+43,M,LOW,NORMAL,19.368,Mesalamine,Seizures
+47,F,LOW,HIGH,11.767,Mesalamine,Birth Control
+34,F,HIGH,NORMAL,19.199,Miconazole,0</span> users found this comment helpful.
+43,M,LOW,HIGH,15.376,Belviq,Rosacea
+74,F,LOW,HIGH,20.942,Seroquel,Chronic Pain
+50,F,NORMAL,HIGH,12.703,Ambien,Benign Essential Trem
+16,F,HIGH,NORMAL,15.516,Nuvigil,Human Papilloma Virus
+69,M,LOW,NORMAL,11.455,Chantix,Hypersomnia
+43,M,HIGH,HIGH,13.972,Chantix,Birth Control
+23,M,LOW,HIGH,7.298,Chantix,Birth Control
+32,F,HIGH,NORMAL,25.974,Chantix,Diabetic Kidney Disease
+57,M,LOW,NORMAL,19.128,Trazodone,Cough
+63,M,NORMAL,HIGH,25.917,EnteraGam,Meniere's Disease
+47,M,LOW,NORMAL,30.568,Aripiprazole,Nasal Congestion
+48,F,LOW,HIGH,15.036,Cyclosporine,Depression
+33,F,LOW,HIGH,33.486,Oxybutynin,Pneumonia
+28,F,HIGH,NORMAL,18.809,Lurasidone,Psoriatic Arthritis
+31,M,HIGH,HIGH,30.366,Clonazepam,Birth Control
+49,F,NORMAL,NORMAL,9.381,Ciclopirox,Bowel Preparation
+39,F,LOW,NORMAL,22.697,Sodium oxybate,Birth Control
+45,M,LOW,HIGH,17.951,Lamotrigine,Pain
+18,F,NORMAL,NORMAL,8.75,Lamotrigine,Birth Control
+74,M,HIGH,HIGH,9.567,Lamotrigine,Keratoconjunctivitis Sicca
+49,M,LOW,NORMAL,11.014,Lamotrigine,Weight Loss
+65,F,HIGH,NORMAL,31.876,Lamotrigine,Vaginal Yeast Infection
+53,M,NORMAL,HIGH,14.133,Lamotrigine,Bipolar Disorde
+46,M,NORMAL,NORMAL,7.285,Lamotrigine,Depression
+32,M,HIGH,NORMAL,9.445,Lamotrigine,Obsessive Compulsive Disorde
+39,M,LOW,NORMAL,13.938,Lamotrigine,Major Depressive Disorde
+39,F,NORMAL,NORMAL,9.709,Escitalopram,Acne
+15,M,NORMAL,HIGH,9.084,Tesamorelin,Chronic Myelogenous Leukemia
+73,F,NORMAL,HIGH,19.221,Campral,Depression
+58,F,HIGH,NORMAL,14.239,Gabapentin,Birth Control
+50,M,NORMAL,NORMAL,15.79,Levonorgestrel,Restless Legs Syndrome
+23,M,NORMAL,HIGH,12.26,Aubra,Birth Control
+50,F,NORMAL,NORMAL,12.295,Plan B One-Step,Endometriosis
+66,F,NORMAL,NORMAL,8.107,Ethinyl estradiol / etonogestrel,Anxiety
+37,F,HIGH,HIGH,13.091,Microgestin Fe 1.5 / 30,Birth Control
+68,M,LOW,HIGH,10.291,Wellbutrin,Birth Control
+23,M,NORMAL,HIGH,31.686,Clonazepam,emale Infertility
+28,F,LOW,HIGH,19.796,Benzoyl peroxide / clindamycin,Oral Thrush
+58,F,HIGH,HIGH,19.416,Etonogestrel,Migraine Prevention
+67,M,NORMAL,NORMAL,10.898,Miconazole,Birth Control
+62,M,LOW,NORMAL,27.183,Nitrofurantoin,Insomnia
+24,F,HIGH,NORMAL,18.457,Etonogestrel,ADHD
+68,F,HIGH,NORMAL,10.189,Ortho Tri-Cyclen Lo,Actinic Keratosis
+26,F,LOW,HIGH,14.16,Tamsulosin,HIV Infection
+65,M,HIGH,NORMAL,11.34,Tofacitinib,Pain
+40,M,HIGH,HIGH,27.826,Cryselle,Cough
+60,M,NORMAL,NORMAL,10.091,Amphetamine / dextroamphetamine,Bipolar Disorde
+34,M,HIGH,HIGH,18.703,Clindamycin,Anxiety
+38,F,LOW,NORMAL,29.875,Pramipexole,Weight Loss
+24,M,HIGH,NORMAL,9.475,Skyla,Birth Control
+67,M,LOW,NORMAL,20.693,Lastacaft,Bowel Preparation
+45,M,LOW,NORMAL,8.37,Effexor XR,Vitamin/Mineral Supplementation during Pregnancy/Lactation
+60,F,HIGH,HIGH,13.303,Nifedipine,Bacterial Infection
+68,F,NORMAL,NORMAL,27.05,Lurasidone,Vitamin D Deficiency
+29,M,HIGH,HIGH,12.856,Afrezza,Sciatica
+17,M,NORMAL,NORMAL,10.832,Zoloft,Depression
+54,M,NORMAL,HIGH,24.658,Ziprasidone,Menstrual Disorders
+18,F,HIGH,NORMAL,24.276,Bactrim,Migraine Prevention
+70,M,HIGH,HIGH,13.967,Ethinyl estradiol / norethindrone,Otitis Media
+28,F,NORMAL,HIGH,19.675,Sertraline,Skin or Soft Tissue Infection
+24,F,NORMAL,HIGH,10.605,Aluminum chloride hexahydrate,Crohn's Disease
+41,F,NORMAL,NORMAL,22.905,Effexor XR,Nausea/Vomiting
+31,M,HIGH,NORMAL,17.069,ParaGard,GERD
+26,M,LOW,NORMAL,20.909,Pregabalin,Depression
+36,F,HIGH,HIGH,11.198,Ethinyl estradiol / levonorgestrel,Birth Control
+26,F,HIGH,NORMAL,19.161,Ultram,Depression
+19,F,HIGH,HIGH,13.313,Phentermine,Urinary Tract Infection
+32,F,LOW,NORMAL,10.84,Venlafaxine,Insomnia
+60,M,HIGH,HIGH,13.934,Campral,Rheumatoid Arthritis
+64,M,NORMAL,HIGH,7.761,Venlafaxine,Vaginal Yeast Infection
+32,F,LOW,HIGH,9.712,Levonorgestrel,Labor Induction
+38,F,HIGH,NORMAL,11.326,BuSpar,Birth Control
+47,F,LOW,HIGH,10.067,Acetaminophen / hydrocodone,Myasthenia Gravis
+59,M,HIGH,HIGH,13.935,Aviane,Back Pain
+51,F,NORMAL,HIGH,13.597,Inderal,Psoriasis
+69,M,LOW,HIGH,15.478,Promethazine,Skin or Soft Tissue Infection
+37,F,HIGH,NORMAL,23.091,Tioconazole,Soft Tissue Sarcoma
+50,F,NORMAL,NORMAL,17.211,Orthovisc,Birth Control
+62,M,NORMAL,HIGH,16.594,Implanon,Osteoporosis
+41,M,HIGH,NORMAL,15.156,Marezine,Constipation
+29,F,HIGH,HIGH,29.45,Levonorgestrel,Anxiety
+42,F,LOW,NORMAL,29.271,Aripiprazole,Psoriasis
+56,M,LOW,HIGH,15.015,Minoxidil,Ovarian Cysts
+36,M,LOW,NORMAL,11.424,Humira,Birth Control
+58,F,LOW,HIGH,38.247,"Insulin inhalation, rapid acting",Kidney Infections
+56,F,HIGH,HIGH,25.395,Acetaminophen / hydrocodone,Birth Control
+20,M,HIGH,NORMAL,35.639,Phenazopyridine,Weight Loss
+15,F,HIGH,NORMAL,16.725,Levonorgestrel,Weight Loss
+31,M,HIGH,NORMAL,11.871,Clonidine,Pain
+45,F,HIGH,HIGH,12.854,Ethinyl estradiol / norgestimate,Birth Control
+28,F,LOW,HIGH,13.127,Nicoderm CQ,Birth Control
+56,M,NORMAL,HIGH,8.966,Levonorgestrel,Acne
+22,M,HIGH,NORMAL,28.294,Celecoxib,Giardiasis
+37,M,LOW,NORMAL,8.968,Fluoxetine,Weight Loss
+22,M,NORMAL,HIGH,11.953,Topamax,Depression
+42,M,LOW,HIGH,20.013,Depakote,ibromyalgia
+72,M,HIGH,NORMAL,9.677,Riboflavin,Depression
+23,M,NORMAL,HIGH,16.85,Lo Loestrin Fe,Diverticulitis
+50,M,HIGH,HIGH,7.49,Copper,Anxiety
+47,F,NORMAL,NORMAL,6.683,Drospirenone / estradiol,Anxiety
+35,M,LOW,NORMAL,9.17,Bupropion,Influenza
+65,F,LOW,NORMAL,13.769,Bacitracin / neomycin / polymyxin b,Abnormal Uterine Bleeding
+20,F,NORMAL,NORMAL,9.281,Phentermine,Anxiety
+51,M,HIGH,HIGH,18.295,Yaz,Birth Control
+67,M,NORMAL,NORMAL,9.514,Copper,Anxiety and Stress
+40,F,NORMAL,HIGH,10.103,Amitriptyline,Cough
+32,F,HIGH,NORMAL,10.292,Jolessa,Depression
+61,F,HIGH,HIGH,25.475,Guaifenesin / pseudoephedrine,Anxiety
+28,M,NORMAL,HIGH,27.064,Oxycodone,Acne
+15,M,HIGH,NORMAL,17.206,Nexplanon,Birth Control
+34,M,NORMAL,HIGH,22.456,Bupropion,Acne
+36,F,NORMAL,HIGH,16.753,Brisdelle,Emergency Contraception
+53,F,HIGH,NORMAL,12.495,Bupropion,Sinusitis
+19,F,HIGH,NORMAL,25.969,Beyaz,Birth Control
+66,M,HIGH,HIGH,16.347,Lo Loestrin Fe,Panic Disorde
+35,M,NORMAL,NORMAL,7.845,Ethinyl estradiol / norgestimate,Anxiety
+47,M,LOW,NORMAL,33.542,Yasmin,Gastroenteritis
+32,F,NORMAL,HIGH,7.477,Bupropion,"Diabetes, Type 2"
+70,F,NORMAL,HIGH,20.489,Zoloft,Osteoarthritis
+52,M,LOW,NORMAL,32.922,Nucynta ER,Period Pain
+49,M,LOW,NORMAL,13.598,Prozac,Birth Control
+24,M,NORMAL,HIGH,25.786,BuSpar,Acne
+42,F,HIGH,HIGH,21.036,Kariva,Insomnia
+74,M,LOW,NORMAL,11.939,Escitalopram,Obesity
+55,F,HIGH,HIGH,10.977,Microgestin Fe 1 / 20,Birth Control
+35,F,HIGH,HIGH,12.894,Liraglutide,Birth Control
+51,M,HIGH,NORMAL,11.343,Sutent,Inflammatory Conditions
+69,F,NORMAL,HIGH,10.065,Ethinyl estradiol / norethindrone,Osteoarthritis
+49,M,HIGH,NORMAL,6.269,Tramadol,Birth Control
+64,F,LOW,NORMAL,25.741,Tylenol with Codeine #3,Muscle Pain
+60,M,HIGH,NORMAL,8.621,BuSpar,Pneumonia
+74,M,HIGH,NORMAL,15.436,Magnesium citrate,"Diabetes, Type 2"
+39,M,HIGH,HIGH,9.664,Tioconazole,Allergic Rhinitis
+61,M,NORMAL,HIGH,9.443,Depo-Provera,Pain
+37,F,LOW,NORMAL,12.006,Drospirenone / ethinyl estradiol,ADHD
+26,F,HIGH,NORMAL,12.307,Safyral,Birth Control
+61,F,LOW,NORMAL,7.34,Levonorgestrel,6</span> users found this comment helpful.
+22,M,LOW,HIGH,8.151,Effexor XR,Sinusitis
+49,M,HIGH,NORMAL,8.7,Desyrel,Neutropenia Associated with Chemotherapy
+68,M,HIGH,HIGH,11.009,Glyburide,Weight Loss
+55,M,NORMAL,NORMAL,7.261,Escitalopram,Emergency Contraception
+72,F,LOW,NORMAL,14.642,Aldesleukin,High Blood Pressure
+37,M,LOW,NORMAL,16.724,Zoloft,Rosacea
+49,M,LOW,HIGH,10.537,Desvenlafaxine,Birth Control
+31,M,HIGH,NORMAL,11.227,Levonorgestrel,Insomnia
+53,M,LOW,HIGH,22.963,Drospirenone / ethinyl estradiol,"Herpes Simplex, Suppression"
+59,F,LOW,HIGH,10.444,Phentermine / topiramate,Pain
+34,F,LOW,NORMAL,12.923,Pristiq,GERD
+30,F,NORMAL,HIGH,10.443,Lurasidone,Menstrual Disorders
+57,F,HIGH,NORMAL,9.945,Miconazole,Anxiety and Stress
+43,M,NORMAL,NORMAL,12.859,Acamprosate,Hyperhidrosis
+21,F,HIGH,NORMAL,28.632,Spironolactone,Vaginal Yeast Infection
+16,M,HIGH,NORMAL,19.007,Doxylamine / pyridoxine,Multiple Sclerosis
+38,M,LOW,HIGH,18.295,Demerol,Cough
+58,F,LOW,HIGH,26.645,Vyvanse,Depression
+57,F,NORMAL,HIGH,14.216,Depo-Provera,Generalized Anxiety Disorde
+51,F,LOW,NORMAL,23.003,Sovaldi,24</span> users found this comment helpful.
+20,F,HIGH,HIGH,11.262,Sertraline,Birth Control
+28,F,NORMAL,HIGH,12.879,Motrin IB,Pain
+45,M,LOW,NORMAL,10.017,Valacyclovir,Vertig
+39,F,NORMAL,NORMAL,17.225,Buprenorphine / naloxone,Sinusitis
+41,F,LOW,NORMAL,18.739,Metoprolol,Birth Control
+42,M,HIGH,NORMAL,12.766,Pristiq,Birth Control
+73,F,HIGH,HIGH,18.348,Montelukast,Depression
+48,M,HIGH,NORMAL,10.446,Dextromethorphan,Muscle Spasm
+25,M,NORMAL,HIGH,19.011,Levitra,Insomnia
+39,M,NORMAL,HIGH,15.969,Restoril,Bronchitis
+67,F,NORMAL,HIGH,15.891,Azathioprine,Birth Control
+22,F,HIGH,NORMAL,22.818,Adapalene / benzoyl peroxide,Restless Legs Syndrome
+59,F,NORMAL,HIGH,13.884,Linzess,Actinic Keratosis
+20,F,LOW,NORMAL,11.686,Levetiracetam,GERD
+36,F,HIGH,NORMAL,15.49,Ziana,Asthma
+18,F,HIGH,HIGH,37.188,Suboxone,Pain
+57,F,NORMAL,NORMAL,25.893,Nexplanon,Nasal Congestion
+70,M,HIGH,HIGH,9.849,Tinidazole,Autism
+47,M,HIGH,HIGH,10.403,Diazepam,Alpha-1 Proteinase Inhibitor Deficiency
+65,M,HIGH,NORMAL,34.997,Spironolactone,Weight Loss
+64,M,HIGH,NORMAL,20.932,Quetiapine,Birth Control
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Birth Control
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Birth Control
+72,M,LOW,HIGH,16.31,Estradiol,Bipolar Disorde
+72,M,LOW,HIGH,6.769,Gabapentin,Bipolar Disorde
+46,F,HIGH,HIGH,34.686,ParaGard,High Cholesterol
+56,F,LOW,HIGH,11.567,Propofol,Anxiety and Stress
+16,M,LOW,HIGH,12.006,Depo-Provera,Erectile Dysfunction
+52,M,NORMAL,HIGH,9.894,Propranolol,Bipolar Disorde
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,High Blood Pressure
+65,M,HIGH,NORMAL,34.997,Spironolactone,Restless Legs Syndrome
+64,M,HIGH,NORMAL,20.932,Quetiapine,Birth Control
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,High Blood Pressure
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Urticaria
+72,M,LOW,HIGH,16.31,Estradiol,Depression
+72,M,LOW,HIGH,6.769,Gabapentin,ibromyalgia
+46,F,HIGH,HIGH,34.686,ParaGard,Depression
+56,F,LOW,HIGH,11.567,Propofol,High Cholesterol
+16,M,LOW,HIGH,12.006,Depo-Provera,Weight Loss
+52,M,NORMAL,HIGH,9.894,Propranolol,Weight Loss
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,Anxiety
+40,F,LOW,NORMAL,11.349,Adapalene / benzoyl peroxide,Birth Control
+23,F,HIGH,HIGH,25.355,Mirtazapine,Pain
+47,M,LOW,HIGH,13.093,Mesalamine,Weight Loss
+47,M,LOW,HIGH,10.114,Mesalamine,"Diabetes, Type 2"
+28,F,NORMAL,HIGH,7.798,Mesalamine,Birth Control
+61,F,LOW,HIGH,18.043,Mesalamine,ADHD
+22,F,NORMAL,HIGH,8.607,Mesalamine,Birth Control
+49,F,NORMAL,HIGH,16.275,Mesalamine,Menstrual Disorders
+41,M,LOW,HIGH,11.037,Mesalamine,Obesity
+60,M,NORMAL,HIGH,15.171,Mesalamine,Birth Control
+43,M,LOW,NORMAL,19.368,Mesalamine,Weight Loss
+47,F,LOW,HIGH,11.767,Mesalamine,Birth Control
+34,F,HIGH,NORMAL,19.199,Miconazole,Cough
+43,M,LOW,HIGH,15.376,Belviq,Acne
+74,F,LOW,HIGH,20.942,Seroquel,Panic Disorde
+50,F,NORMAL,HIGH,12.703,Ambien,Weight Loss
+16,F,HIGH,NORMAL,15.516,Nuvigil,Birth Control
+69,M,LOW,NORMAL,11.455,Chantix,Pain
+43,M,HIGH,HIGH,13.972,Chantix,Vaginal Yeast Infection
+23,M,LOW,HIGH,7.298,Chantix,Anxiety
+32,F,HIGH,NORMAL,25.974,Chantix,Bipolar Disorde
+57,M,LOW,NORMAL,19.128,Trazodone,Birth Control
+63,M,NORMAL,HIGH,25.917,EnteraGam,Emergency Contraception
+47,M,LOW,NORMAL,30.568,Aripiprazole,Major Depressive Disorde
+48,F,LOW,HIGH,15.036,Cyclosporine,Acne
+33,F,LOW,HIGH,33.486,Oxybutynin,Birth Control
+28,F,HIGH,NORMAL,18.809,Lurasidone,Systemic Lupus Erythematosus
+31,M,HIGH,HIGH,30.366,Clonazepam,Bipolar Disorde
+49,F,NORMAL,NORMAL,9.381,Ciclopirox,Weight Loss
+39,F,LOW,NORMAL,22.697,Sodium oxybate,Diarrhea
+45,M,LOW,HIGH,17.951,Lamotrigine,Pain
+18,F,NORMAL,NORMAL,8.75,Lamotrigine,"Crohn's Disease, Acute"
+74,M,HIGH,HIGH,9.567,Lamotrigine,Migraine Prevention
+49,M,LOW,NORMAL,11.014,Lamotrigine,Birth Control
+65,F,HIGH,NORMAL,31.876,Lamotrigine,Acne
+53,M,NORMAL,HIGH,14.133,Lamotrigine,HIV Infection
+46,M,NORMAL,NORMAL,7.285,Lamotrigine,Emergency Contraception
+32,M,HIGH,NORMAL,9.445,Lamotrigine,Birth Control
+39,M,LOW,NORMAL,13.938,Lamotrigine,Birth Control
+39,F,NORMAL,NORMAL,9.709,Escitalopram,Migraine
+15,M,NORMAL,HIGH,9.084,Tesamorelin,Birth Control
+73,F,NORMAL,HIGH,19.221,Campral,Social Anxiety Disorde
+58,F,HIGH,NORMAL,14.239,Gabapentin,Vaginal Yeast Infection
+50,M,NORMAL,NORMAL,15.79,Levonorgestrel,Acne
+23,M,NORMAL,HIGH,12.26,Aubra,"Herpes Simplex, Suppression"
+50,F,NORMAL,NORMAL,12.295,Plan B One-Step,Depression
+66,F,NORMAL,NORMAL,8.107,Ethinyl estradiol / etonogestrel,Muscle Spasm
+37,F,HIGH,HIGH,13.091,Microgestin Fe 1.5 / 30,Anxiety
+68,M,LOW,HIGH,10.291,Wellbutrin,Birth Control
+23,M,NORMAL,HIGH,31.686,Clonazepam,Birth Control
+28,F,LOW,HIGH,19.796,Benzoyl peroxide / clindamycin,Pulmonary Hypertension
+58,F,HIGH,HIGH,19.416,Etonogestrel,Migraine
+67,M,NORMAL,NORMAL,10.898,Miconazole,Rheumatoid Arthritis
+62,M,LOW,NORMAL,27.183,Nitrofurantoin,Birth Control
+24,F,HIGH,NORMAL,18.457,Etonogestrel,Acne
+68,F,HIGH,NORMAL,10.189,Ortho Tri-Cyclen Lo,High Blood Pressure
+26,F,LOW,HIGH,14.16,Tamsulosin,Bladder Infection
+65,M,HIGH,NORMAL,11.34,Tofacitinib,Depression
+40,M,HIGH,HIGH,27.826,Cryselle,Rosacea
+60,M,NORMAL,NORMAL,10.091,Amphetamine / dextroamphetamine,Obesity
+34,M,HIGH,HIGH,18.703,Clindamycin,High Blood Pressure
+38,F,LOW,NORMAL,29.875,Pramipexole,Birth Control
+24,M,HIGH,NORMAL,9.475,Skyla,Depression
+67,M,LOW,NORMAL,20.693,Lastacaft,"Constipation, Chronic"
+45,M,LOW,NORMAL,8.37,Effexor XR,Birth Control
+60,F,HIGH,HIGH,13.303,Nifedipine,Bladder Infection
+68,F,NORMAL,NORMAL,27.05,Lurasidone,Breast Cance
+29,M,HIGH,HIGH,12.856,Afrezza,Depression
+17,M,NORMAL,NORMAL,10.832,Zoloft,Nausea/Vomiting
+54,M,NORMAL,HIGH,24.658,Ziprasidone,Insomnia
+18,F,HIGH,NORMAL,24.276,Bactrim,Birth Control
+70,M,HIGH,HIGH,13.967,Ethinyl estradiol / norethindrone,Seizure Prevention
+28,F,NORMAL,HIGH,19.675,Sertraline,Birth Control
+24,F,NORMAL,HIGH,10.605,Aluminum chloride hexahydrate,Abnormal Uterine Bleeding
+41,F,NORMAL,NORMAL,22.905,Effexor XR,Abnormal Uterine Bleeding
+31,M,HIGH,NORMAL,17.069,ParaGard,Osteoarthritis
+26,M,LOW,NORMAL,20.909,Pregabalin,Birth Control
+36,F,HIGH,HIGH,11.198,Ethinyl estradiol / levonorgestrel,Major Depressive Disorde
+26,F,HIGH,NORMAL,19.161,Ultram,Borderline Personality Disorde
+19,F,HIGH,HIGH,13.313,Phentermine,Depression
+32,F,LOW,NORMAL,10.84,Venlafaxine,Migraine Prevention
+60,M,HIGH,HIGH,13.934,Campral,Depression
+64,M,NORMAL,HIGH,7.761,Venlafaxine,Birth Control
+32,F,LOW,HIGH,9.712,Levonorgestrel,Birth Control
+38,F,HIGH,NORMAL,11.326,BuSpar,Muscle Spasm
+47,F,LOW,HIGH,10.067,Acetaminophen / hydrocodone,Rheumatoid Arthritis
+59,M,HIGH,HIGH,13.935,Aviane,Weight Loss
+51,F,NORMAL,HIGH,13.597,Inderal,ibromyalgia
+69,M,LOW,HIGH,15.478,Promethazine,Bipolar Disorde
+37,F,HIGH,NORMAL,23.091,Tioconazole,Smoking Cessation
+50,F,NORMAL,NORMAL,17.211,Orthovisc,Osteoarthritis
+62,M,NORMAL,HIGH,16.594,Implanon,Rat-bite Feve
+41,M,HIGH,NORMAL,15.156,Marezine,Smoking Cessation
+29,F,HIGH,HIGH,29.45,Levonorgestrel,Obesity
+42,F,LOW,NORMAL,29.271,Aripiprazole,Birth Control
+56,M,LOW,HIGH,15.015,Minoxidil,Constipation
+36,M,LOW,NORMAL,11.424,Humira,"COPD, Maintenance"
+58,F,LOW,HIGH,38.247,"Insulin inhalation, rapid acting",Erectile Dysfunction
+56,F,HIGH,HIGH,25.395,Acetaminophen / hydrocodone,Birth Control
+20,M,HIGH,NORMAL,35.639,Phenazopyridine,Not Listed / Othe
+15,F,HIGH,NORMAL,16.725,Levonorgestrel,Bipolar Disorde
+31,M,HIGH,NORMAL,11.871,Clonidine,Erectile Dysfunction
+45,F,HIGH,HIGH,12.854,Ethinyl estradiol / norgestimate,Seizure Prevention
+28,F,LOW,HIGH,13.127,Nicoderm CQ,Rheumatoid Arthritis
+56,M,NORMAL,HIGH,8.966,Levonorgestrel,Anxiety
+22,M,HIGH,NORMAL,28.294,Celecoxib,Anxiety
+37,M,LOW,NORMAL,8.968,Fluoxetine,Alopecia
+22,M,NORMAL,HIGH,11.953,Topamax,"Diabetes, Type 2"
+42,M,LOW,HIGH,20.013,Depakote,Birth Control
+72,M,HIGH,NORMAL,9.677,Riboflavin,Bowel Preparation
+23,M,NORMAL,HIGH,16.85,Lo Loestrin Fe,Birth Control
+50,M,HIGH,HIGH,7.49,Copper,Emergency Contraception
+47,F,NORMAL,NORMAL,6.683,Drospirenone / estradiol,"Diabetes, Type 2"
+35,M,LOW,NORMAL,9.17,Bupropion,Dysuria
+65,F,LOW,NORMAL,13.769,Bacitracin / neomycin / polymyxin b,Birth Control
+20,F,NORMAL,NORMAL,9.281,Phentermine,Warts
+51,M,HIGH,HIGH,18.295,Yaz,Emergency Contraception
+67,M,NORMAL,NORMAL,9.514,Copper,Pain
+40,F,NORMAL,HIGH,10.103,Amitriptyline,Birth Control
+32,F,HIGH,NORMAL,10.292,Jolessa,Anxiety
+61,F,HIGH,HIGH,25.475,Guaifenesin / pseudoephedrine,Leukemia
+28,M,NORMAL,HIGH,27.064,Oxycodone,Constipation
+15,M,HIGH,NORMAL,17.206,Nexplanon,Emergency Contraception
+34,M,NORMAL,HIGH,22.456,Bupropion,High Cholesterol
+36,F,NORMAL,HIGH,16.753,Brisdelle,Panic Disorde
+53,F,HIGH,NORMAL,12.495,Bupropion,Birth Control
+19,F,HIGH,NORMAL,25.969,Beyaz,Abnormal Uterine Bleeding
+66,M,HIGH,HIGH,16.347,Lo Loestrin Fe,Anxiety
+35,M,NORMAL,NORMAL,7.845,Ethinyl estradiol / norgestimate,Birth Control
+47,M,LOW,NORMAL,33.542,Yasmin,Depression
+32,F,NORMAL,HIGH,7.477,Bupropion,Birth Control
+70,F,NORMAL,HIGH,20.489,Zoloft,Weight Loss
+52,M,LOW,NORMAL,32.922,Nucynta ER,"Conjunctivitis, Allergic"
+49,M,LOW,NORMAL,13.598,Prozac,Urinary Tract Infection
+24,M,NORMAL,HIGH,25.786,BuSpar,Underactive Thyroid
+42,F,HIGH,HIGH,21.036,Kariva,Still's Disease
+74,M,LOW,NORMAL,11.939,Escitalopram,Hashimoto's disease
+55,F,HIGH,HIGH,10.977,Microgestin Fe 1 / 20,Birth Control
+35,F,HIGH,HIGH,12.894,Liraglutide,Bipolar Disorde
+51,M,HIGH,NORMAL,11.343,Sutent,Vaginal Yeast Infection
+69,F,NORMAL,HIGH,10.065,Ethinyl estradiol / norethindrone,Anesthesia
+49,M,HIGH,NORMAL,6.269,Tramadol,Bacterial Vaginitis
+64,F,LOW,NORMAL,25.741,Tylenol with Codeine #3,Irritable Bowel Syndrome
+60,M,HIGH,NORMAL,8.621,BuSpar,Birth Control
+74,M,HIGH,NORMAL,15.436,Magnesium citrate,Birth Control
+39,M,HIGH,HIGH,9.664,Tioconazole,"Constipation, Chronic"
+61,M,NORMAL,HIGH,9.443,Depo-Provera,Birth Control
+37,F,LOW,NORMAL,12.006,Drospirenone / ethinyl estradiol,Birth Control
+26,F,HIGH,NORMAL,12.307,Safyral,Pain
+61,F,LOW,NORMAL,7.34,Levonorgestrel,Nausea/Vomiting
+22,M,LOW,HIGH,8.151,Effexor XR,Birth Control
+49,M,HIGH,NORMAL,8.7,Desyrel,Sinusitis
+68,M,HIGH,HIGH,11.009,Glyburide,Mitral Valve Prolapse
+55,M,NORMAL,NORMAL,7.261,Escitalopram,Abnormal Uterine Bleeding
+72,F,LOW,NORMAL,14.642,Aldesleukin,Acne
+37,M,LOW,NORMAL,16.724,Zoloft,Epilepsy
+49,M,LOW,HIGH,10.537,Desvenlafaxine,High Blood Pressure
+31,M,HIGH,NORMAL,11.227,Levonorgestrel,Allergic Rhinitis
+53,M,LOW,HIGH,22.963,Drospirenone / ethinyl estradiol,"Hypogonadism, Male"
+59,F,LOW,HIGH,10.444,Phentermine / topiramate,Birth Control
+34,F,LOW,NORMAL,12.923,Pristiq,Pain
+30,F,NORMAL,HIGH,10.443,Lurasidone,Anxiety
+57,F,HIGH,NORMAL,9.945,Miconazole,9</span> users found this comment helpful.
+43,M,NORMAL,NORMAL,12.859,Acamprosate,Anxiety
+21,F,HIGH,NORMAL,28.632,Spironolactone,ADHD
+16,M,HIGH,NORMAL,19.007,Doxylamine / pyridoxine,Birth Control
+38,M,LOW,HIGH,18.295,Demerol,Obesity
+58,F,LOW,HIGH,26.645,Vyvanse,Birth Control
+57,F,NORMAL,HIGH,14.216,Depo-Provera,Pain
+51,F,LOW,NORMAL,23.003,Sovaldi,Obsessive Compulsive Disorde
+20,F,HIGH,HIGH,11.262,Sertraline,Birth Control
+28,F,NORMAL,HIGH,12.879,Motrin IB,Bipolar Disorde
+45,M,LOW,NORMAL,10.017,Valacyclovir,Overactive Bladde
+39,F,NORMAL,NORMAL,17.225,Buprenorphine / naloxone,Peripheral Neuropathy
+41,F,LOW,NORMAL,18.739,Metoprolol,Pain
+42,M,HIGH,NORMAL,12.766,Pristiq,"Glaucoma, Open Angle"
+73,F,HIGH,HIGH,18.348,Montelukast,Major Depressive Disorde
+48,M,HIGH,NORMAL,10.446,Dextromethorphan,Birth Control
+25,M,NORMAL,HIGH,19.011,Levitra,Constipation
+39,M,NORMAL,HIGH,15.969,Restoril,Birth Control
+67,F,NORMAL,HIGH,15.891,Azathioprine,Depression
+22,F,HIGH,NORMAL,22.818,Adapalene / benzoyl peroxide,Irritable Bowel Syndrome
+59,F,NORMAL,HIGH,13.884,Linzess,Depression
+20,F,LOW,NORMAL,11.686,Levetiracetam,Cough
+36,F,HIGH,NORMAL,15.49,Ziana,Birth Control
+18,F,HIGH,HIGH,37.188,Suboxone,"Onychomycosis, Toenail"
+57,F,NORMAL,NORMAL,25.893,Nexplanon,Cluster Headaches
+70,M,HIGH,HIGH,9.849,Tinidazole,Depression
+47,M,HIGH,HIGH,10.403,Diazepam,Anxiety
+65,M,HIGH,NORMAL,34.997,Spironolactone,Bipolar Disorde
+64,M,HIGH,NORMAL,20.932,Quetiapine,Weight Loss
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Ulcerative Colitis
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Birth Control
+72,M,LOW,HIGH,16.31,Estradiol,Bacterial Skin Infection
+72,M,LOW,HIGH,6.769,Gabapentin,Emergency Contraception
+46,F,HIGH,HIGH,34.686,ParaGard,Psoriatic Arthritis
+56,F,LOW,HIGH,11.567,Propofol,Smoking Cessation
+16,M,LOW,HIGH,12.006,Depo-Provera,Back Pain
+52,M,NORMAL,HIGH,9.894,Propranolol,Depression
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,Weight Loss
+65,M,HIGH,NORMAL,34.997,Spironolactone,Emergency Contraception
+64,M,HIGH,NORMAL,20.932,Quetiapine,ibromyalgia
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Birth Control
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Constipation
+72,M,LOW,HIGH,16.31,Estradiol,Depression
+72,M,LOW,HIGH,6.769,Gabapentin,Opiate Dependence
+46,F,HIGH,HIGH,34.686,ParaGard,Opiate Dependence
+56,F,LOW,HIGH,11.567,Propofol,Birth Control
+16,M,LOW,HIGH,12.006,Depo-Provera,Panic Disorde
+52,M,NORMAL,HIGH,9.894,Propranolol,"Asthma, Maintenance"
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,Breast Cance
+40,F,LOW,NORMAL,11.349,Adapalene / benzoyl peroxide,Deep Vein Thrombosis
+23,F,HIGH,HIGH,25.355,Mirtazapine,min / sitagliptin)
+47,M,LOW,HIGH,13.093,Mesalamine,Anxiety
+47,M,LOW,HIGH,10.114,Mesalamine,Insomnia
+28,F,NORMAL,HIGH,7.798,Mesalamine,Birth Control
+61,F,LOW,HIGH,18.043,Mesalamine,Post Traumatic Stress Disorde
+22,F,NORMAL,HIGH,8.607,Mesalamine,Obesity
+49,F,NORMAL,HIGH,16.275,Mesalamine,Birth Control
+41,M,LOW,HIGH,11.037,Mesalamine,Irritable Bowel Syndrome
+60,M,NORMAL,HIGH,15.171,Mesalamine,Bipolar Disorde
+43,M,LOW,NORMAL,19.368,Mesalamine,Birth Control
+47,F,LOW,HIGH,11.767,Mesalamine,Osteoarthritis
+34,F,HIGH,NORMAL,19.199,Miconazole,Acne
+43,M,LOW,HIGH,15.376,Belviq,Weight Loss
+74,F,LOW,HIGH,20.942,Seroquel,Birth Control
+50,F,NORMAL,HIGH,12.703,Ambien,Pain
+16,F,HIGH,NORMAL,15.516,Nuvigil,Acne
+69,M,LOW,NORMAL,11.455,Chantix,Bursitis
+43,M,HIGH,HIGH,13.972,Chantix,Prostatitis
+23,M,LOW,HIGH,7.298,Chantix,Bowel Preparation
+32,F,HIGH,NORMAL,25.974,Chantix,Acne
+57,M,LOW,NORMAL,19.128,Trazodone,Bipolar Disorde
+63,M,NORMAL,HIGH,25.917,EnteraGam,Weight Loss
+47,M,LOW,NORMAL,30.568,Aripiprazole,Bacterial Vaginitis
+48,F,LOW,HIGH,15.036,Cyclosporine,Birth Control
+33,F,LOW,HIGH,33.486,Oxybutynin,ibromyalgia
+28,F,HIGH,NORMAL,18.809,Lurasidone,Birth Control
+31,M,HIGH,HIGH,30.366,Clonazepam,Birth Control
+49,F,NORMAL,NORMAL,9.381,Ciclopirox,Postoperative Pain
+39,F,LOW,NORMAL,22.697,Sodium oxybate,Sinusitis
+45,M,LOW,HIGH,17.951,Lamotrigine,Hyperhidrosis
+18,F,NORMAL,NORMAL,8.75,Lamotrigine,Peripheral Neuropathy
+74,M,HIGH,HIGH,9.567,Lamotrigine,Emergency Contraception
+49,M,LOW,NORMAL,11.014,Lamotrigine,Irritable Bowel Syndrome
+65,F,HIGH,NORMAL,31.876,Lamotrigine,Acne
+53,M,NORMAL,HIGH,14.133,Lamotrigine,Human Papillomavirus Prophylaxis
+46,M,NORMAL,NORMAL,7.285,Lamotrigine,Cough
+32,M,HIGH,NORMAL,9.445,Lamotrigine,Depression
+39,M,LOW,NORMAL,13.938,Lamotrigine,ADHD
+39,F,NORMAL,NORMAL,9.709,Escitalopram,Opiate Withdrawal
+15,M,NORMAL,HIGH,9.084,Tesamorelin,Birth Control
+73,F,NORMAL,HIGH,19.221,Campral,Major Depressive Disorde
+58,F,HIGH,NORMAL,14.239,Gabapentin,ibromyalgia
+50,M,NORMAL,NORMAL,15.79,Levonorgestrel,Hepatitis C
+23,M,NORMAL,HIGH,12.26,Aubra,GERD
+50,F,NORMAL,NORMAL,12.295,Plan B One-Step,Birth Control
+66,F,NORMAL,NORMAL,8.107,Ethinyl estradiol / etonogestrel,Smoking Cessation
+37,F,HIGH,HIGH,13.091,Microgestin Fe 1.5 / 30,Bacterial Skin Infection
+68,M,LOW,HIGH,10.291,Wellbutrin,Birth Control
+23,M,NORMAL,HIGH,31.686,Clonazepam,Restless Legs Syndrome
+28,F,LOW,HIGH,19.796,Benzoyl peroxide / clindamycin,Not Listed / Othe
+58,F,HIGH,HIGH,19.416,Etonogestrel,Chronic Pain
+67,M,NORMAL,NORMAL,10.898,Miconazole,"Constipation, Drug Induced"
+62,M,LOW,NORMAL,27.183,Nitrofurantoin,Chlamydia Infection
+24,F,HIGH,NORMAL,18.457,Etonogestrel,Birth Control
+68,F,HIGH,NORMAL,10.189,Ortho Tri-Cyclen Lo,Birth Control
+26,F,LOW,HIGH,14.16,Tamsulosin,"Ulcerative Colitis, Active"
+65,M,HIGH,NORMAL,11.34,Tofacitinib,Birth Control
+40,M,HIGH,HIGH,27.826,Cryselle,me
+60,M,NORMAL,NORMAL,10.091,Amphetamine / dextroamphetamine,Abnormal Uterine Bleeding
+34,M,HIGH,HIGH,18.703,Clindamycin,Computed Tomography
+38,F,LOW,NORMAL,29.875,Pramipexole,High Blood Pressure
+24,M,HIGH,NORMAL,9.475,Skyla,Bronchitis
+67,M,LOW,NORMAL,20.693,Lastacaft,Bowel Preparation
+45,M,LOW,NORMAL,8.37,Effexor XR,Urinary Tract Infection
+60,F,HIGH,HIGH,13.303,Nifedipine,Allergic Rhinitis
+68,F,NORMAL,NORMAL,27.05,Lurasidone,Vaginal Yeast Infection
+29,M,HIGH,HIGH,12.856,Afrezza,Depression
+17,M,NORMAL,NORMAL,10.832,Zoloft,"Herpes Zoster, Prophylaxis"
+54,M,NORMAL,HIGH,24.658,Ziprasidone,Supraventricular Tachycardia
+18,F,HIGH,NORMAL,24.276,Bactrim,Bacterial Infection
+70,M,HIGH,HIGH,13.967,Ethinyl estradiol / norethindrone,Smoking Cessation
+28,F,NORMAL,HIGH,19.675,Sertraline,Birth Control
+24,F,NORMAL,HIGH,10.605,Aluminum chloride hexahydrate,Anesthesia
+41,F,NORMAL,NORMAL,22.905,Effexor XR,ADHD
+31,M,HIGH,NORMAL,17.069,ParaGard,Acne
+26,M,LOW,NORMAL,20.909,Pregabalin,Indigestion
+36,F,HIGH,HIGH,11.198,Ethinyl estradiol / levonorgestrel,"Gout, Acute"
+26,F,HIGH,NORMAL,19.161,Ultram,Major Depressive Disorde
+19,F,HIGH,HIGH,13.313,Phentermine,Depression
+32,F,LOW,NORMAL,10.84,Venlafaxine,Schizoaffective Disorde
+60,M,HIGH,HIGH,13.934,Campral,Skin or Soft Tissue Infection
+64,M,NORMAL,HIGH,7.761,Venlafaxine,Nocturnal Leg Cramps
+32,F,LOW,HIGH,9.712,Levonorgestrel,Anxiety
+38,F,HIGH,NORMAL,11.326,BuSpar,Generalized Anxiety Disorde
+47,F,LOW,HIGH,10.067,Acetaminophen / hydrocodone,Urticaria
+59,M,HIGH,HIGH,13.935,Aviane,Allergic Rhinitis
+51,F,NORMAL,HIGH,13.597,Inderal,Bowel Preparation
+69,M,LOW,HIGH,15.478,Promethazine,Migraine
+37,F,HIGH,NORMAL,23.091,Tioconazole,Birth Control
+50,F,NORMAL,NORMAL,17.211,Orthovisc,Anxiety
+62,M,NORMAL,HIGH,16.594,Implanon,Anxiety
+41,M,HIGH,NORMAL,15.156,Marezine,Birth Control
+29,F,HIGH,HIGH,29.45,Levonorgestrel,Multiple Sclerosis
+42,F,LOW,NORMAL,29.271,Aripiprazole,Anxiety
+56,M,LOW,HIGH,15.015,Minoxidil,Birth Control
+36,M,LOW,NORMAL,11.424,Humira,Epilepsy
+58,F,LOW,HIGH,38.247,"Insulin inhalation, rapid acting",Insomnia
+56,F,HIGH,HIGH,25.395,Acetaminophen / hydrocodone,10</span> users found this comment helpful.
+20,M,HIGH,NORMAL,35.639,Phenazopyridine,Smoking Cessation
+15,F,HIGH,NORMAL,16.725,Levonorgestrel,Bipolar Disorde
+31,M,HIGH,NORMAL,11.871,Clonidine,Prostate Cance
+45,F,HIGH,HIGH,12.854,Ethinyl estradiol / norgestimate,Urticaria
+28,F,LOW,HIGH,13.127,Nicoderm CQ,Obesity
+56,M,NORMAL,HIGH,8.966,Levonorgestrel,Urinary Tract Infection
+22,M,HIGH,NORMAL,28.294,Celecoxib,Birth Control
+37,M,LOW,NORMAL,8.968,Fluoxetine,Narcolepsy
+22,M,NORMAL,HIGH,11.953,Topamax,Anal Fissure and Fistula
+42,M,LOW,HIGH,20.013,Depakote,Birth Control
+72,M,HIGH,NORMAL,9.677,Riboflavin,Smoking Cessation
+23,M,NORMAL,HIGH,16.85,Lo Loestrin Fe,Birth Control
+50,M,HIGH,HIGH,7.49,Copper,Birth Control
+47,F,NORMAL,NORMAL,6.683,Drospirenone / estradiol,"Onychomycosis, Toenail"
+35,M,LOW,NORMAL,9.17,Bupropion,Depression
+65,F,LOW,NORMAL,13.769,Bacitracin / neomycin / polymyxin b,Narcolepsy
+20,F,NORMAL,NORMAL,9.281,Phentermine,"Diabetes, Type 2"
+51,M,HIGH,HIGH,18.295,Yaz,Rheumatoid Arthritis
+67,M,NORMAL,NORMAL,9.514,Copper,Anxiety
+40,F,NORMAL,HIGH,10.103,Amitriptyline,Acne
+32,F,HIGH,NORMAL,10.292,Jolessa,HIV Infection
+61,F,HIGH,HIGH,25.475,Guaifenesin / pseudoephedrine,Birth Control
+28,M,NORMAL,HIGH,27.064,Oxycodone,Depression
+15,M,HIGH,NORMAL,17.206,Nexplanon,Parkinson's Disease
+34,M,NORMAL,HIGH,22.456,Bupropion,Birth Control
+36,F,NORMAL,HIGH,16.753,Brisdelle,Birth Control
+53,F,HIGH,NORMAL,12.495,Bupropion,Migraine
+19,F,HIGH,NORMAL,25.969,Beyaz,Anxiety
+66,M,HIGH,HIGH,16.347,Lo Loestrin Fe,ibromyalgia
+35,M,NORMAL,NORMAL,7.845,Ethinyl estradiol / norgestimate,Schizophrenia
+47,M,LOW,NORMAL,33.542,Yasmin,Birth Control
+32,F,NORMAL,HIGH,7.477,Bupropion,"Constipation, Chronic"
+70,F,NORMAL,HIGH,20.489,Zoloft,High Cholesterol
+52,M,LOW,NORMAL,32.922,Nucynta ER,Bacterial Vaginitis
+49,M,LOW,NORMAL,13.598,Prozac,Premenstrual Dysphoric Disorde
+24,M,NORMAL,HIGH,25.786,BuSpar,Birth Control
+42,F,HIGH,HIGH,21.036,Kariva,Birth Control
+74,M,LOW,NORMAL,11.939,Escitalopram,Birth Control
+55,F,HIGH,HIGH,10.977,Microgestin Fe 1 / 20,Multiple Sclerosis
+35,F,HIGH,HIGH,12.894,Liraglutide,Weight Loss
+51,M,HIGH,NORMAL,11.343,Sutent,Chronic Pain
+69,F,NORMAL,HIGH,10.065,Ethinyl estradiol / norethindrone,Chlamydia Infection
+49,M,HIGH,NORMAL,6.269,Tramadol,Vaginal Yeast Infection
+64,F,LOW,NORMAL,25.741,Tylenol with Codeine #3,Chronic Pain
+60,M,HIGH,NORMAL,8.621,BuSpar,Influenza
+74,M,HIGH,NORMAL,15.436,Magnesium citrate,HIV Infection
+39,M,HIGH,HIGH,9.664,Tioconazole,Migraine
+61,M,NORMAL,HIGH,9.443,Depo-Provera,Generalized Anxiety Disorde
+37,F,LOW,NORMAL,12.006,Drospirenone / ethinyl estradiol,Migraine
+26,F,HIGH,NORMAL,12.307,Safyral,Psoriasis
+61,F,LOW,NORMAL,7.34,Levonorgestrel,Muscle Spasm
+22,M,LOW,HIGH,8.151,Effexor XR,Acne
+49,M,HIGH,NORMAL,8.7,Desyrel,Birth Control
+68,M,HIGH,HIGH,11.009,Glyburide,ADHD
+55,M,NORMAL,NORMAL,7.261,Escitalopram,atigue
+72,F,LOW,NORMAL,14.642,Aldesleukin,Obesity
+37,M,LOW,NORMAL,16.724,Zoloft,Chronic Pain
+49,M,LOW,HIGH,10.537,Desvenlafaxine,Restless Legs Syndrome
+31,M,HIGH,NORMAL,11.227,Levonorgestrel,2</span> users found this comment helpful.
+53,M,LOW,HIGH,22.963,Drospirenone / ethinyl estradiol,
+59,F,LOW,HIGH,10.444,Phentermine / topiramate,Birth Control
+34,F,LOW,NORMAL,12.923,Pristiq,Panic Disorde
+30,F,NORMAL,HIGH,10.443,Lurasidone,Depression
+57,F,HIGH,NORMAL,9.945,Miconazole,Panic Disorde
+43,M,NORMAL,NORMAL,12.859,Acamprosate,Urinary Tract Infection
+21,F,HIGH,NORMAL,28.632,Spironolactone,Birth Control
+16,M,HIGH,NORMAL,19.007,Doxylamine / pyridoxine,Anxiety
+38,M,LOW,HIGH,18.295,Demerol,Major Depressive Disorde
+58,F,LOW,HIGH,26.645,Vyvanse,Rosacea
+57,F,NORMAL,HIGH,14.216,Depo-Provera,Pain
+51,F,LOW,NORMAL,23.003,Sovaldi,Hypersomnia
+20,F,HIGH,HIGH,11.262,Sertraline,Birth Control
+28,F,NORMAL,HIGH,12.879,Motrin IB,Obesity
+45,M,LOW,NORMAL,10.017,Valacyclovir,Epilepsy
+39,F,NORMAL,NORMAL,17.225,Buprenorphine / naloxone,ibromyalgia
+41,F,LOW,NORMAL,18.739,Metoprolol,Urinary Incontinence
+42,M,HIGH,NORMAL,12.766,Pristiq,Muscle Spasm
+73,F,HIGH,HIGH,18.348,Montelukast,Birth Control
+48,M,HIGH,NORMAL,10.446,Dextromethorphan,Depression
+25,M,NORMAL,HIGH,19.011,Levitra,Obesity
+39,M,NORMAL,HIGH,15.969,Restoril,Human Papilloma Virus
+67,F,NORMAL,HIGH,15.891,Azathioprine,Obesity
+22,F,HIGH,NORMAL,22.818,Adapalene / benzoyl peroxide,Birth Control
+59,F,NORMAL,HIGH,13.884,Linzess,Weight Loss
+20,F,LOW,NORMAL,11.686,Levetiracetam,Obesity
+36,F,HIGH,NORMAL,15.49,Ziana,Depression
+18,F,HIGH,HIGH,37.188,Suboxone,Bipolar Disorde
+57,F,NORMAL,NORMAL,25.893,Nexplanon,Endometriosis
+70,M,HIGH,HIGH,9.849,Tinidazole,Acne
+47,M,HIGH,HIGH,10.403,Diazepam,Heart Attack
+65,M,HIGH,NORMAL,34.997,Spironolactone,Depression
+64,M,HIGH,NORMAL,20.932,Quetiapine,Depression
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Urinary Tract Infection
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Anxiety
+72,M,LOW,HIGH,16.31,Estradiol,Insomnia
+72,M,LOW,HIGH,6.769,Gabapentin,Major Depressive Disorde
+46,F,HIGH,HIGH,34.686,ParaGard,High Cholesterol
+56,F,LOW,HIGH,11.567,Propofol,Birth Control
+16,M,LOW,HIGH,12.006,Depo-Provera,Depression
+52,M,NORMAL,HIGH,9.894,Propranolol,"Gout, Acute"
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,High Blood Pressure
+65,M,HIGH,NORMAL,34.997,Spironolactone,Erectile Dysfunction
+64,M,HIGH,NORMAL,20.932,Quetiapine,Pain
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Anxiety and Stress
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,COPD
+72,M,LOW,HIGH,16.31,Estradiol,Depression
+72,M,LOW,HIGH,6.769,Gabapentin,Birth Control
+46,F,HIGH,HIGH,34.686,ParaGard,Pain
+56,F,LOW,HIGH,11.567,Propofol,Birth Control
+16,M,LOW,HIGH,12.006,Depo-Provera,Birth Control
+52,M,NORMAL,HIGH,9.894,Propranolol,Pain
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,"Diabetes, Type 2"
+40,F,LOW,NORMAL,11.349,Adapalene / benzoyl peroxide,Duodenal Ulce
+23,F,HIGH,HIGH,25.355,Mirtazapine,Acne
+47,M,LOW,HIGH,13.093,Mesalamine,Birth Control
+47,M,LOW,HIGH,10.114,Mesalamine,Birth Control
+28,F,NORMAL,HIGH,7.798,Mesalamine,Migraine Prevention
+61,F,LOW,HIGH,18.043,Mesalamine,Alzheimer's Disease
+22,F,NORMAL,HIGH,8.607,Mesalamine,Hepatitis C
+49,F,NORMAL,HIGH,16.275,Mesalamine,Birth Control
+41,M,LOW,HIGH,11.037,Mesalamine,Vaginal Yeast Infection
+60,M,NORMAL,HIGH,15.171,Mesalamine,Insomnia
+43,M,LOW,NORMAL,19.368,Mesalamine,Depression
+47,F,LOW,HIGH,11.767,Mesalamine,Restless Legs Syndrome
+34,F,HIGH,NORMAL,19.199,Miconazole,Sinusitis
+43,M,LOW,HIGH,15.376,Belviq,Abnormal Uterine Bleeding
+74,F,LOW,HIGH,20.942,Seroquel,"COPD, Maintenance"
+50,F,NORMAL,HIGH,12.703,Ambien,Constipation
+16,F,HIGH,NORMAL,15.516,Nuvigil,Insomnia
+69,M,LOW,NORMAL,11.455,Chantix,Obesity
+43,M,HIGH,HIGH,13.972,Chantix,Birth Control
+23,M,LOW,HIGH,7.298,Chantix,Pain
+32,F,HIGH,NORMAL,25.974,Chantix,Rheumatoid Arthritis
+57,M,LOW,NORMAL,19.128,Trazodone,Hyperhidrosis
+63,M,NORMAL,HIGH,25.917,EnteraGam,Smoking Cessation
+47,M,LOW,NORMAL,30.568,Aripiprazole,Migraine
+48,F,LOW,HIGH,15.036,Cyclosporine,Sinusitis
+33,F,LOW,HIGH,33.486,Oxybutynin,Pain
+28,F,HIGH,NORMAL,18.809,Lurasidone,Pain
+31,M,HIGH,HIGH,30.366,Clonazepam,Birth Control
+49,F,NORMAL,NORMAL,9.381,Ciclopirox,Major Depressive Disorde
+39,F,LOW,NORMAL,22.697,Sodium oxybate,Emergency Contraception
+45,M,LOW,HIGH,17.951,Lamotrigine,"Asthma, Maintenance"
+18,F,NORMAL,NORMAL,8.75,Lamotrigine,Birth Control
+74,M,HIGH,HIGH,9.567,Lamotrigine,Depression
+49,M,LOW,NORMAL,11.014,Lamotrigine,Anxiety
+65,F,HIGH,NORMAL,31.876,Lamotrigine,Generalized Anxiety Disorde
+53,M,NORMAL,HIGH,14.133,Lamotrigine,Opiate Dependence
+46,M,NORMAL,NORMAL,7.285,Lamotrigine,Birth Control
+32,M,HIGH,NORMAL,9.445,Lamotrigine,Insomnia
+39,M,LOW,NORMAL,13.938,Lamotrigine,Acne
+39,F,NORMAL,NORMAL,9.709,Escitalopram,Pain
+15,M,NORMAL,HIGH,9.084,Tesamorelin,Anxiety
+73,F,NORMAL,HIGH,19.221,Campral,Anesthesia
+58,F,HIGH,NORMAL,14.239,Gabapentin,Migraine
+50,M,NORMAL,NORMAL,15.79,Levonorgestrel,Birth Control
+23,M,NORMAL,HIGH,12.26,Aubra,Birth Control
+50,F,NORMAL,NORMAL,12.295,Plan B One-Step,Migraine Prevention
+66,F,NORMAL,NORMAL,8.107,Ethinyl estradiol / etonogestrel,"Diabetes, Type 2"
+37,F,HIGH,HIGH,13.091,Microgestin Fe 1.5 / 30,Overactive Bladde
+68,M,LOW,HIGH,10.291,Wellbutrin,Anxiety and Stress
+23,M,NORMAL,HIGH,31.686,Clonazepam,Bipolar Disorde
+28,F,LOW,HIGH,19.796,Benzoyl peroxide / clindamycin,Anxiety
+58,F,HIGH,HIGH,19.416,Etonogestrel,Pain
+67,M,NORMAL,NORMAL,10.898,Miconazole,Anxiety and Stress
+62,M,LOW,NORMAL,27.183,Nitrofurantoin,Weight Loss
+24,F,HIGH,NORMAL,18.457,Etonogestrel,Weight Loss
+68,F,HIGH,NORMAL,10.189,Ortho Tri-Cyclen Lo,Atrial Fibrillation
+26,F,LOW,HIGH,14.16,Tamsulosin,Chronic Pain
+65,M,HIGH,NORMAL,11.34,Tofacitinib,Insomnia
+40,M,HIGH,HIGH,27.826,Cryselle,Nausea/Vomiting
+60,M,NORMAL,NORMAL,10.091,Amphetamine / dextroamphetamine,Birth Control
+34,M,HIGH,HIGH,18.703,Clindamycin,Pain
+38,F,LOW,NORMAL,29.875,Pramipexole,Birth Control
+24,M,HIGH,NORMAL,9.475,Skyla,Chlamydia Infection
+67,M,LOW,NORMAL,20.693,Lastacaft,Chronic Pain
+45,M,LOW,NORMAL,8.37,Effexor XR,Urinary Tract Infection
+60,F,HIGH,HIGH,13.303,Nifedipine,Basal Cell Carcinoma
+68,F,NORMAL,NORMAL,27.05,Lurasidone,Birth Control
+29,M,HIGH,HIGH,12.856,Afrezza,GERD
+17,M,NORMAL,NORMAL,10.832,Zoloft,Depression
+54,M,NORMAL,HIGH,24.658,Ziprasidone,Acne
+18,F,HIGH,NORMAL,24.276,Bactrim,Anesthesia
+70,M,HIGH,HIGH,13.967,Ethinyl estradiol / norethindrone,Birth Control
+28,F,NORMAL,HIGH,19.675,Sertraline,Overactive Bladde
+24,F,NORMAL,HIGH,10.605,Aluminum chloride hexahydrate,"Diabetes, Type 2"
+41,F,NORMAL,NORMAL,22.905,Effexor XR,ADHD
+31,M,HIGH,NORMAL,17.069,ParaGard,Barrett's Esophagus
+26,M,LOW,NORMAL,20.909,Pregabalin,Androgenetic Alopecia
+36,F,HIGH,HIGH,11.198,Ethinyl estradiol / levonorgestrel,Benign Prostatic Hyperplasia
+26,F,HIGH,NORMAL,19.161,Ultram,Osteoarthritis
+19,F,HIGH,HIGH,13.313,Phentermine,Acne
+32,F,LOW,NORMAL,10.84,Venlafaxine,Birth Control
+60,M,HIGH,HIGH,13.934,Campral,ADHD
+64,M,NORMAL,HIGH,7.761,Venlafaxine,Influenza
+32,F,LOW,HIGH,9.712,Levonorgestrel,Depression
+38,F,HIGH,NORMAL,11.326,BuSpar,Insomnia
+47,F,LOW,HIGH,10.067,Acetaminophen / hydrocodone,"Hypothyroidism, After Thyroid Removal"
+59,M,HIGH,HIGH,13.935,Aviane,Bipolar Disorde
+51,F,NORMAL,HIGH,13.597,Inderal,Seizures
+69,M,LOW,HIGH,15.478,Promethazine,Acne
+37,F,HIGH,NORMAL,23.091,Tioconazole,Opiate Dependence
+50,F,NORMAL,NORMAL,17.211,Orthovisc,Depression
+62,M,NORMAL,HIGH,16.594,Implanon,Emergency Contraception
+41,M,HIGH,NORMAL,15.156,Marezine,Birth Control
+29,F,HIGH,HIGH,29.45,Levonorgestrel,Birth Control
+42,F,LOW,NORMAL,29.271,Aripiprazole,Birth Control
+56,M,LOW,HIGH,15.015,Minoxidil,Birth Control
+36,M,LOW,NORMAL,11.424,Humira,Obesity
+58,F,LOW,HIGH,38.247,"Insulin inhalation, rapid acting",Obesity
+56,F,HIGH,HIGH,25.395,Acetaminophen / hydrocodone,Depression
+20,M,HIGH,NORMAL,35.639,Phenazopyridine,Depression
+15,F,HIGH,NORMAL,16.725,Levonorgestrel,Birth Control
+31,M,HIGH,NORMAL,11.871,Clonidine,Bipolar Disorde
+45,F,HIGH,HIGH,12.854,Ethinyl estradiol / norgestimate,Birth Control
+28,F,LOW,HIGH,13.127,Nicoderm CQ,Birth Control
+56,M,NORMAL,HIGH,8.966,Levonorgestrel,Headache
+22,M,HIGH,NORMAL,28.294,Celecoxib,Ankylosing Spondylitis
+37,M,LOW,NORMAL,8.968,Fluoxetine,Postpartum Depression
+22,M,NORMAL,HIGH,11.953,Topamax,Depression
+42,M,LOW,HIGH,20.013,Depakote,High Cholesterol
+72,M,HIGH,NORMAL,9.677,Riboflavin,Restless Legs Syndrome
+23,M,NORMAL,HIGH,16.85,Lo Loestrin Fe,Opioid Overdose
+50,M,HIGH,HIGH,7.49,Copper,Erectile Dysfunction
+47,F,NORMAL,NORMAL,6.683,Drospirenone / estradiol,Insomnia
+35,M,LOW,NORMAL,9.17,Bupropion,High Cholesterol
+65,F,LOW,NORMAL,13.769,Bacitracin / neomycin / polymyxin b,Birth Control
+20,F,NORMAL,NORMAL,9.281,Phentermine,Smoking Cessation
+51,M,HIGH,HIGH,18.295,Yaz,Prevention of Bladder infection
+67,M,NORMAL,NORMAL,9.514,Copper,Weight Loss
+40,F,NORMAL,HIGH,10.103,Amitriptyline,Bowel Preparation
+32,F,HIGH,NORMAL,10.292,Jolessa,ADHD
+61,F,HIGH,HIGH,25.475,Guaifenesin / pseudoephedrine,Depression
+28,M,NORMAL,HIGH,27.064,Oxycodone,Depression
+15,M,HIGH,NORMAL,17.206,Nexplanon,GERD
+34,M,NORMAL,HIGH,22.456,Bupropion,Infection Prophylaxis
+36,F,NORMAL,HIGH,16.753,Brisdelle,Perimenopausal Symptoms
+53,F,HIGH,NORMAL,12.495,Bupropion,Depression
+19,F,HIGH,NORMAL,25.969,Beyaz,Birth Control
+66,M,HIGH,HIGH,16.347,Lo Loestrin Fe,Obesity
+35,M,NORMAL,NORMAL,7.845,Ethinyl estradiol / norgestimate,Seizures
+47,M,LOW,NORMAL,33.542,Yasmin,Birth Control
+32,F,NORMAL,HIGH,7.477,Bupropion,Emergency Contraception
+70,F,NORMAL,HIGH,20.489,Zoloft,Birth Control
+52,M,LOW,NORMAL,32.922,Nucynta ER,Benign Prostatic Hyperplasia
+49,M,LOW,NORMAL,13.598,Prozac,Depression
+24,M,NORMAL,HIGH,25.786,BuSpar,ibromyalgia
+42,F,HIGH,HIGH,21.036,Kariva,Anxiety
+74,M,LOW,NORMAL,11.939,Escitalopram,Epilepsy
+55,F,HIGH,HIGH,10.977,Microgestin Fe 1 / 20,Panic Disorde
+35,F,HIGH,HIGH,12.894,Liraglutide,Birth Control
+51,M,HIGH,NORMAL,11.343,Sutent,Cold Sores
+69,F,NORMAL,HIGH,10.065,Ethinyl estradiol / norethindrone,Anxiety
+49,M,HIGH,NORMAL,6.269,Tramadol,Hepatitis C
+64,F,LOW,NORMAL,25.741,Tylenol with Codeine #3,Headache
+60,M,HIGH,NORMAL,8.621,BuSpar,Rosacea
+74,M,HIGH,NORMAL,15.436,Magnesium citrate,Birth Control
+39,M,HIGH,HIGH,9.664,Tioconazole,Birth Control
+61,M,NORMAL,HIGH,9.443,Depo-Provera,Obesity
+37,F,LOW,NORMAL,12.006,Drospirenone / ethinyl estradiol,Multiple Sclerosis
+26,F,HIGH,NORMAL,12.307,Safyral,Birth Control
+61,F,LOW,NORMAL,7.34,Levonorgestrel,Bowel Preparation
+22,M,LOW,HIGH,8.151,Effexor XR,Birth Control
+49,M,HIGH,NORMAL,8.7,Desyrel,Birth Control
+68,M,HIGH,HIGH,11.009,Glyburide,Bipolar Disorde
+55,M,NORMAL,NORMAL,7.261,Escitalopram,Narcolepsy
+72,F,LOW,NORMAL,14.642,Aldesleukin,"Onychomycosis, Toenail"
+37,M,LOW,NORMAL,16.724,Zoloft,Pain
+49,M,LOW,HIGH,10.537,Desvenlafaxine,Swine Flu
+31,M,HIGH,NORMAL,11.227,Levonorgestrel,Pain
+53,M,LOW,HIGH,22.963,Drospirenone / ethinyl estradiol,Birth Control
+59,F,LOW,HIGH,10.444,Phentermine / topiramate,Smoking Cessation
+34,F,LOW,NORMAL,12.923,Pristiq,Bipolar Disorde
+30,F,NORMAL,HIGH,10.443,Lurasidone,Dry Eye Disease
+57,F,HIGH,NORMAL,9.945,Miconazole,Bowel Preparation
+43,M,NORMAL,NORMAL,12.859,Acamprosate,Birth Control
+21,F,HIGH,NORMAL,28.632,Spironolactone,Sinusitis
+16,M,HIGH,NORMAL,19.007,Doxylamine / pyridoxine,Ulcerative Proctitis
+38,M,LOW,HIGH,18.295,Demerol,Acne
+58,F,LOW,HIGH,26.645,Vyvanse,Birth Control
+57,F,NORMAL,HIGH,14.216,Depo-Provera,ibromyalgia
+51,F,LOW,NORMAL,23.003,Sovaldi,Acne
+20,F,HIGH,HIGH,11.262,Sertraline,Sinusitis
+28,F,NORMAL,HIGH,12.879,Motrin IB,Rheumatoid Arthritis
+45,M,LOW,NORMAL,10.017,Valacyclovir,"Organ Transplant, Rejection Prophylaxis"
+39,F,NORMAL,NORMAL,17.225,Buprenorphine / naloxone,Bipolar Disorde
+41,F,LOW,NORMAL,18.739,Metoprolol,Bowel Preparation
+42,M,HIGH,NORMAL,12.766,Pristiq,Depression
+73,F,HIGH,HIGH,18.348,Montelukast,Generalized Anxiety Disorde
+48,M,HIGH,NORMAL,10.446,Dextromethorphan,Birth Control
+25,M,NORMAL,HIGH,19.011,Levitra,Depression
+39,M,NORMAL,HIGH,15.969,Restoril,Anxiety
+67,F,NORMAL,HIGH,15.891,Azathioprine,Human Papilloma Virus
+22,F,HIGH,NORMAL,22.818,Adapalene / benzoyl peroxide,Depression
+59,F,NORMAL,HIGH,13.884,Linzess,Anxiety
+20,F,LOW,NORMAL,11.686,Levetiracetam,High Blood Pressure
+36,F,HIGH,NORMAL,15.49,Ziana,Nausea/Vomiting
+18,F,HIGH,HIGH,37.188,Suboxone,Nausea/Vomiting
+57,F,NORMAL,NORMAL,25.893,Nexplanon,Reflex Sympathetic Dystrophy Syndrome
+70,M,HIGH,HIGH,9.849,Tinidazole,Reflex Sympathetic Dystrophy Syndrome
+47,M,HIGH,HIGH,10.403,Diazepam,Reflex Sympathetic Dystrophy Syndrome
+65,M,HIGH,NORMAL,34.997,Spironolactone,Reflex Sympathetic Dystrophy Syndrome
+64,M,HIGH,NORMAL,20.932,Quetiapine,Reflex Sympathetic Dystrophy Syndrome
+58,M,HIGH,HIGH,18.991,Acetaminophen / butalbital / caffeine,Reflex Sympathetic Dystrophy Syndrome
+23,M,HIGH,HIGH,8.011,Ethinyl estradiol / norethindrone,Reflex Sympathetic Dystrophy Syndrome
+72,M,LOW,HIGH,16.31,Estradiol,Reflex Sympathetic Dystrophy Syndrome
+72,M,LOW,HIGH,6.769,Gabapentin,Reflex Sympathetic Dystrophy Syndrome
+46,F,HIGH,HIGH,34.686,ParaGard,Reflex Sympathetic Dystrophy Syndrome
+56,F,LOW,HIGH,11.567,Propofol,Reflex Sympathetic Dystrophy Syndrome
+16,M,LOW,HIGH,12.006,Depo-Provera,Reflex Sympathetic Dystrophy Syndrome
+52,M,NORMAL,HIGH,9.894,Propranolol,Reflex Sympathetic Dystrophy Syndrome
+23,M,NORMAL,NORMAL,14.02,Adapalene / benzoyl peroxide,Reflex Sympathetic Dystrophy Syndrome

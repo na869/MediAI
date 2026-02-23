@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            background-image: url('depression.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+        }
+        /* Additional CSS styling for other elements can be added here */
+    </style>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <form method="POST">
+        <label for="text_to_predict">Enter Text for Prediction:</label><br>
+        <textarea id="text_to_predict" name="text_to_predict" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_result %}
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction_result }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+venv/
+*.pyc
+__pycache__/
+instance/
+.ipynb_checkpoints/
+.env
+*.sav
+# We will NOT ignore .sav if you want the model on GitHub, 
+# but drug_rf.sav is 50MB. GitHub has a 100MB limit. 
+# It is safe to include for now.

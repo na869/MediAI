@@ -1,0 +1,12 @@
+Flask
+Flask-WTF
+WTForms
+Flask-SQLAlchemy
+email_validator
+pandas
+numpy
+scikit-learn
+scipy
+pickleshare
+cloudpickle
+matplotlib-inline

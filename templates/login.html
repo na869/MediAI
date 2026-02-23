@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5 mt-lg-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5 col-xl-4 reveal">
+            <div class="premium-card p-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-800">Welcome Back</h2>
+                    <p class="text-slate small">Sign in to access clinical insights</p>
+                </div>
+
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-slate">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="Enter username" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <label class="form-label small fw-bold text-slate mb-0">Password</label>
+                            <a href="#" class="text-accent small fw-bold text-decoration-none">Forgot?</a>
+                        </div>
+                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn-premium btn-accent w-100 mb-4">Sign In</button>
+
+                    <p class="text-center small text-slate mb-0">
+                        New here? <a href="{{ url_for('signup') }}" class="text-accent fw-bold text-decoration-none">Create an account</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
