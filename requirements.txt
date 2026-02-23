@@ -7,8 +7,7 @@ pandas
 numpy
 scikit-learn
 scipy
-xhtml2pdf
-reportlab
+xhtml2pdf==0.2.8
 SQLAlchemy
 werkzeug
 python-dateutil
