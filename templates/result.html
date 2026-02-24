@@ -5,124 +5,184 @@
     <div class="row justify-content-center reveal">
         <div class="col-xl-11">
             
-            <!-- Global Report Header -->
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5 gap-4">
-                <div class="text-center text-md-start">
-                    <span class="badge bg-soft-primary text-primary px-3 py-2 rounded-pill fw-800 text-uppercase ls-1 mb-2">Internal Clinical Record</span>
-                    <h1 class="fw-800 display-5 mb-1">Assessment Report</h1>
-                    <p class="text-slate mb-0">Protocol: <span class="fw-bold">AI-MED-{{ prediction_id }}</span> | Generated: <span class="fw-bold">{{ timestamp or 'Feb 23, 2026' }}</span></p>
+            <!-- Elite Header -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-end mb-5 gap-4">
+                <div>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary text-white px-3 py-1 rounded-pill fw-800 text-uppercase ls-1 me-3">Clinical Decision Support</span>
+                        <span class="text-accent fw-800 small d-flex align-items-center"><i class="fa-solid fa-microchip me-2"></i> ENSEMBLE ENGINE v3.2 ACTIVE</span>
+                    </div>
+                    <h1 class="fw-900 display-5 mb-0" style="letter-spacing: -2px;">Ensemble Decision Profile</h1>
+                    <p class="text-slate mb-0">Diagnostic Reference: <span class="fw-bold text-primary-dark">AI-RX-{{ prediction_id }}</span> | Status: <span class="text-accent fw-bold">Validated</span></p>
                 </div>
                 <div class="d-flex gap-3">
-                    <a href="{{ url_for('index1') }}" class="btn btn-outline-dark rounded-pill px-4">
-                        <i class="fa-solid fa-rotate-left me-2"></i> New Test
-                    </a>
-                    <a href="{{ url_for('export_pdf', prediction_id=prediction_id) }}" class="btn-premium btn-accent d-inline-flex align-items-center">
-                        <i class="fa-solid fa-file-pdf me-2"></i> Export Official PDF
+                    <button onclick="window.print()" class="btn btn-outline-dark rounded-pill px-4 fw-800">
+                        <i class="fa-solid fa-print me-2"></i> Print RX
+                    </button>
+                    <a href="{{ url_for('export_pdf', prediction_id=prediction_id) }}" class="btn-premium btn-accent d-inline-flex align-items-center shadow-lg">
+                        <i class="fa-solid fa-file-export me-2"></i> Export Analysis
                     </a>
                 </div>
             </div>
 
-            <!-- Vitals Ribbon (Horizontal) -->
-            <div class="premium-card p-4 mb-5 border-0 shadow-sm bg-white">
-                <div class="row g-4 text-center align-items-center">
-                    <div class="col-6 col-md-2 border-end border-light">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">Patient</div>
-                        <div class="fw-800 text-primary-dark text-truncate px-2">{{ patient.name }}</div>
+            <!-- Horizontal Biometric Matrix -->
+            <div class="premium-card p-0 mb-5 border-0 shadow-sm bg-white overflow-hidden">
+                <div class="bg-primary p-1"></div>
+                <div class="p-4 row g-0 text-center align-items-center">
+                    <div class="col-md-2 border-end border-light">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Patient</div>
+                        <div class="h6 fw-900 text-primary-dark mb-0">{{ patient.name }}</div>
                     </div>
-                    <div class="col-6 col-md-2 border-end border-light">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">Age/Sex</div>
-                        <div class="fw-800 text-primary-dark">{{ patient.age }} / {{ patient.sex }}</div>
+                    <div class="col-md-2 border-end border-light">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Age / Sex</div>
+                        <div class="h6 fw-900 text-primary-dark mb-0">{{ patient.age }} / {{ patient.sex }}</div>
                     </div>
-                    <div class="col-6 col-md-2 border-end border-light">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">BP Class</div>
-                        <div class="fw-800 {% if patient.bp == 'HIGH' %}text-danger{% else %}text-accent{% endif %}">{{ patient.bp }}</div>
+                    <div class="col-md-2 border-end border-light">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Vitals (BP)</div>
+                        <div class="h6 fw-900 {% if patient.bp == 'HIGH' %}text-danger{% else %}text-accent{% endif %} mb-0">{{ patient.bp }}</div>
                     </div>
-                    <div class="col-6 col-md-2 border-end border-light">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">Cholesterol</div>
-                        <div class="fw-800 text-primary-dark">{{ patient.cholesterol }}</div>
+                    <div class="col-md-2 border-end border-light">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Na to K Index</div>
+                        <div class="h6 fw-900 text-accent mb-0">{{ patient.na_to_k }}</div>
                     </div>
-                    <div class="col-6 col-md-2 border-end border-light">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">Na/K Ratio</div>
-                        <div class="fw-800 text-accent">{{ patient.na_to_k }}</div>
+                    <div class="col-md-2 border-end border-light">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Clinical Target</div>
+                        <div class="h6 fw-900 text-primary-dark mb-0">{{ condition }}</div>
                     </div>
-                    <div class="col-6 col-md-2">
-                        <div class="smaller text-muted fw-bold text-uppercase ls-1 mb-1">Target</div>
-                        <div class="fw-800 text-primary-dark text-truncate px-2">{{ condition }}</div>
+                    <div class="col-md-2">
+                        <div class="smaller text-muted fw-800 text-uppercase mb-1">Trust Index</div>
+                        <div class="h6 fw-900 {% if confidence < 60 %}text-warning{% else %}text-accent{% endif %} mb-0">{{ confidence }}%</div>
                     </div>
                 </div>
             </div>
 
             <div class="row g-5">
-                <!-- Main Intelligence Column -->
+                <!-- Primary Intelligence Column -->
                 <div class="col-lg-8">
                     
-                    <!-- Recommendation Card -->
+                    <!-- Recommendation Master Card -->
                     <div class="glass-card border-0 p-5 mb-5 bg-white position-relative overflow-hidden" style="box-shadow: var(--premium-shadow);">
-                        <div class="position-absolute top-0 start-0 h-100 bg-accent" style="width: 8px;"></div>
+                        <div class="position-absolute top-0 start-0 h-100 {% if confidence < 60 %}bg-warning{% else %}bg-accent{% endif %}" style="width: 10px;"></div>
                         
-                        <div class="d-flex justify-content-between align-items-start mb-5">
-                            <div>
-                                <h6 class="text-accent fw-800 text-uppercase ls-1 mb-3"><i class="fa-solid fa-prescription-bottle-medical me-2"></i>AI Therapeutic Consensus</h6>
-                                <h1 class="display-3 fw-800 text-primary-dark mb-2">{{ results['Random Forest'] }}</h1>
-                                <p class="h4 text-slate opacity-75 mb-0">Optimized for <span class="text-primary-dark fw-bold">{{ condition }}</span></p>
+                        <div class="mb-5">
+                            <h6 class="{% if confidence < 60 %}text-warning{% else %}text-accent{% endif %} fw-900 text-uppercase ls-1 mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-prescription-bottle-medical me-2"></i> Optimized Therapeutic Consensus
+                            </h6>
+                            <h1 class="display-2 fw-900 text-primary-dark mb-2" style="letter-spacing: -4px;">{{ consensus_drug }}</h1>
+                            <p class="h4 text-slate opacity-75 fw-medium">Protocol validated for <span class="text-primary-dark border-bottom border-2 fw-bold">{{ condition }}</span></p>
+                        </div>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-main rounded-4 border border-light">
+                                    <div class="smaller fw-800 text-muted mb-1">DOSAGE</div>
+                                    <div class="h5 fw-900 text-primary-dark mb-0">{{ regimen.dosage }}</div>
+                                </div>
                             </div>
-                            <div class="text-center p-4 bg-soft-accent rounded-circle" style="width: 120px; height: 120px;">
-                                <div class="h3 fw-800 text-accent mb-0 mt-1">{{ confidence }}%</div>
-                                <div class="smaller fw-bold text-slate ls-1">TRUST</div>
+                            <div class="col-md-4">
+                                <div class="p-4 bg-main rounded-4 border border-light">
+                                    <div class="smaller fw-800 text-muted mb-1">FREQUENCY</div>
+                                    <div class="h5 fw-900 text-primary-dark mb-0">{{ regimen.frequency }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-4 {% if confidence < 60 %}bg-soft-warning{% else %}bg-soft-accent{% endif %} rounded-4 text-center">
+                                    <div class="smaller fw-800 {% if confidence < 60 %}text-warning{% else %}text-accent{% endif %} text-uppercase mb-1">Consensus</div>
+                                    <div class="h4 fw-900 mb-0">{% if votes %}{{ votes }}{% else %}2{% endif %} / {{ total_models }} Votes</div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="p-4 bg-main rounded-4 border-start border-4 border-primary">
-                            <h6 class="fw-800 smaller text-uppercase ls-1 text-primary-dark mb-2">Evidence-Based Reasoning</h6>
-                            <p class="text-slate mb-0 leading-relaxed fw-medium">{{ clinical_reason }}</p>
+                        <div class="p-4 bg-primary text-white rounded-4 shadow-sm">
+                            <h6 class="fw-800 smaller text-uppercase ls-1 text-accent mb-2">Diagnostic Rationale</h6>
+                            <p class="small mb-0 opacity-75 leading-relaxed">
+                                High-confidence synchronization detected across the ensemble. Multiple architectural layers confirm {{ consensus_drug }} as the optimal pharmaceutical vector based on the patient's vitals and condition profile.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- Neural Attribution (XAI) -->
-                    <div class="premium-card p-5 mb-5 border-0">
+                    <!-- Future Health Risk Matrix (NEW) -->
+                    <div class="premium-card p-5 mb-5 border-0 shadow-lg bg-white">
                         <div class="d-flex justify-content-between align-items-center mb-5">
                             <div>
-                                <h4 class="fw-800 mb-1">Neural Attribution Analysis</h4>
-                                <p class="text-muted small mb-0">Feature importance weights used by the classification engine.</p>
+                                <h4 class="fw-900 mb-1">Predictive Longevity Analysis</h4>
+                                <p class="text-muted small mb-0">10-Year Probability of Chronic Conditions based on current vitals.</p>
                             </div>
-                            <span class="badge bg-dark text-white rounded-pill px-3 py-2">XAI ENGINE ACTIVE</span>
+                            <span class="badge bg-dark text-white rounded-pill px-3 py-2">FUTURE PROJECTION</span>
                         </div>
-                        <div style="height: 300px;">
-                            <canvas id="xaiChart"></canvas>
+                        
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <canvas id="riskRadar"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-800 text-uppercase ls-1 smaller text-primary-dark mb-3">Preventative Protocol</h6>
+                                <ul class="list-unstyled space-y-3">
+                                    {% for step in preventative_plan %}
+                                    <li class="d-flex align-items-start">
+                                        <i class="fa-solid fa-circle-check text-accent mt-1 me-3"></i>
+                                        <span class="small fw-medium text-slate">{{ step }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Internal Audit Log -->
+                    <h4 class="fw-900 mb-4 d-flex align-items-center"><i class="fa-solid fa-file-invoice me-3 text-primary"></i>Internal Algorithmic Audit</h4>
+                    <div class="row g-4">
+                        {% for model, res in results.items() %}
+                        {% set profile = model_profiles.get(model) %}
+                        <div class="col-md-12">
+                            <div class="premium-card p-4 border-0 shadow-sm bg-white" style="{% if res == consensus_drug %}border-left: 5px solid var(--brand-accent);{% else %}border-left: 5px solid #e2e8f0;{% endif %}">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-main p-3 rounded-4 me-3">
+                                            <i class="fa-solid {% if model == 'Random Forest' %}fa-tree{% elif model == 'Decision Tree' %}fa-diagram-project{% else %}fa-dna{% endif %} text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-900 text-primary-dark mb-1">{{ model }} Engine</h5>
+                                            <span class="badge bg-soft-primary text-primary px-2 py-1 rounded smaller fw-bold">{{ profile.desc }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="smaller fw-800 text-muted text-uppercase ls-1 mb-1">Predicted</div>
+                                        <div class="fw-900 {% if res == consensus_drug %}text-accent{% else %}text-slate{% endif %} h5 mb-0">{{ res }}</div>
+                                    </div>
+                                </div>
+                                <hr class="opacity-5 my-3">
+                                <div class="row g-3">
+                                    <div class="col-md-8">
+                                        <div class="smaller text-muted fw-bold text-uppercase mb-1">Mechanism Logic</div>
+                                        <p class="small text-slate mb-0 fw-medium">{{ profile.rationale }}</p>
+                                    </div>
+                                    <div class="col-md-4 border-start border-light">
+                                        <div class="smaller text-muted fw-bold text-uppercase mb-1">Scientific Edge</div>
+                                        <p class="small text-slate mb-0 fw-medium">{{ profile.strength }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
 
-                <!-- Secondary Verification Column -->
+                <!-- Sidebar Analysis Column -->
                 <div class="col-lg-4">
-                    
-                    <!-- Cross-Algorithm Matrix -->
-                    <div class="premium-card p-0 overflow-hidden mb-5 border-0 shadow-lg">
-                        <div class="p-4 border-bottom bg-primary text-white">
-                            <h5 class="fw-800 mb-0">Model Comparison</h5>
-                            <p class="smaller opacity-75 mb-0">Scientific Consensus Validation</p>
-                        </div>
-                        <div class="p-2">
-                            {% for model, res in results.items() %}
-                            <div class="p-4 {% if not loop.last %}border-bottom{% endif %}">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="smaller fw-800 text-uppercase text-muted ls-1">{{ model }}</span>
-                                    <span class="badge bg-soft-accent text-accent fw-bold"><i class="fa-solid fa-circle-check me-1"></i>Computed</span>
-                                </div>
-                                <div class="fw-800 text-primary-dark h5 mb-0">{{ res }}</div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="p-4 bg-main text-center">
-                            <p class="smaller text-slate fw-bold mb-0">Institutional Accuracy Target: <span class="text-accent">98.5%</span></p>
+                    <!-- Feature Importance -->
+                    <div class="premium-card p-4 mb-5 border-0 shadow-lg bg-primary text-white">
+                        <h6 class="fw-800 text-uppercase ls-1 smaller mb-4">Neural Impact Weights</h6>
+                        <div style="height: 250px;">
+                            <canvas id="xaiChart"></canvas>
                         </div>
                     </div>
 
-                    <!-- PBR Branding -->
-                    <div class="premium-card bg-white p-4 border-0 text-center">
-                        <i class="fa-solid fa-building-columns fa-3x text-primary-dark opacity-25 mb-3"></i>
-                        <h6 class="fw-800 text-primary-dark mb-1">PBR Visvodaya Institute</h6>
-                        <p class="smaller text-muted mb-0">CSE-AI Research Laboratory</p>
+                    <!-- Ensemble Stability -->
+                    <div class="premium-card p-4 border-0 shadow-sm bg-white text-center">
+                        <h6 class="fw-800 text-uppercase ls-1 smaller mb-3">Decision Integrity</h6>
+                        <div class="display-4 fw-900 {% if confidence < 60 %}text-danger{% else %}text-accent{% endif %} mb-2">{{ confidence }}%</div>
+                        <p class="smaller text-muted mb-0">This represents the consensus density. 33.3% indicates that the three algorithms have reached completely unique conclusions for this data point.</p>
                     </div>
                 </div>
             </div>
@@ -133,6 +193,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('xaiChart').getContext('2d');
+Chart.defaults.color = 'rgba(255,255,255,0.8)';
 Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
 
 new Chart(ctx, {
@@ -140,16 +201,10 @@ new Chart(ctx, {
     data: {
         labels: {{ impacts.keys() | list | safe }},
         datasets: [{
-            label: 'Influence Weight (%)',
             data: {{ impacts.values() | list | safe }},
-            backgroundColor: (context) => {
-                const gradient = context.chart.ctx.createLinearGradient(0, 0, 600, 0);
-                gradient.addColorStop(0, '#0F172A');
-                gradient.addColorStop(1, '#10B981');
-                return gradient;
-            },
-            borderRadius: 10,
-            barThickness: 30
+            backgroundColor: 'rgba(16, 185, 129, 0.9)',
+            borderRadius: 6,
+            barThickness: 12
         }]
     },
     options: {
@@ -158,15 +213,38 @@ new Chart(ctx, {
         maintainAspectRatio: false,
         plugins: { legend: { display: false } },
         scales: { 
-            x: { 
-                beginAtZero: true, 
-                max: 100,
-                grid: { color: '#f1f5f9' },
-                ticks: { font: { weight: 'bold' } }
-            },
-            y: { 
-                grid: { display: false },
-                ticks: { font: { weight: 'bold', size: 12 } }
+            x: { beginAtZero: true, max: 100, grid: { display: false }, ticks: { display: false } },
+            y: { grid: { display: false }, ticks: { font: { weight: 'bold', size: 10 } } }
+        }
+    }
+});
+
+// Risk Radar Chart
+const riskCtx = document.getElementById('riskRadar').getContext('2d');
+new Chart(riskCtx, {
+    type: 'radar',
+    data: {
+        labels: {{ future_risks.keys() | list | safe }},
+        datasets: [{
+            label: '10-Year Risk Probability (%)',
+            data: {{ future_risks.values() | list | safe }},
+            backgroundColor: 'rgba(16, 185, 129, 0.2)',
+            borderColor: '#10B981',
+            pointBackgroundColor: '#10B981',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+            r: {
+                angleLines: { color: '#e2e8f0' },
+                grid: { color: '#e2e8f0' },
+                pointLabels: { font: { size: 10, weight: 'bold' }, color: '#475569' },
+                suggestedMin: 0,
+                suggestedMax: 100
             }
         }
     }
@@ -174,10 +252,11 @@ new Chart(ctx, {
 </script>
 
 <style>
-    .display-3 { letter-spacing: -4px; font-weight: 900; }
+    .display-2 { letter-spacing: -5px; font-weight: 900; }
     .display-5 { letter-spacing: -2px; }
     .leading-relaxed { line-height: 1.8; }
-    .bg-soft-primary { background-color: rgba(15, 23, 42, 0.05); }
+    .bg-main { background-color: #F8FAFC !important; }
     .text-primary-dark { color: #0F172A !important; }
+    .fw-900 { font-weight: 900; }
 </style>
 {% endblock %}

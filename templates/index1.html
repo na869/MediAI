@@ -3,32 +3,21 @@
 {% block content %}
 <div class="container py-5 mt-lg-5">
     <div class="row justify-content-center">
-        <div class="col-xl-10 reveal">
+        <div class="col-xl-11 reveal">
             <div class="premium-card p-0 overflow-hidden border-0 shadow-lg">
                 <div class="row g-0">
-                    <!-- Tech Sidebar -->
+                    <!-- Informational Sidebar -->
                     <div class="col-lg-4 bg-primary text-white p-5 d-flex flex-column">
                         <div class="mb-5">
                             <div class="bg-accent text-white p-3 rounded-4 d-inline-block mb-4 shadow-lg">
-                                <i class="fa-solid fa-microscope fa-2x"></i>
+                                <i class="fa-solid fa-laptop-medical fa-2x"></i>
                             </div>
-                            <h2 class="fw-800">Advanced Diagnostic Engine</h2>
-                            <p class="opacity-75 small">Our AI processes clinical symptoms and vital vectors to autonomously determine the patient's condition and optimal treatment path.</p>
+                            <h2 class="fw-800">Elite CDSS Engine</h2>
+                            <p class="opacity-75 small">Our Clinical Decision Support System utilizes weighted ensemble intelligence to resolve complex diagnostic vectors.</p>
                         </div>
-                        
                         <div class="mt-auto space-y-4">
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
-                                <span class="smaller fw-bold text-uppercase ls-1">Automatic Diagnosis</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
-                                <span class="smaller fw-bold text-uppercase ls-1">Multi-Model Ensemble</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-circle-check text-accent me-3"></i>
-                                <span class="smaller fw-bold text-uppercase ls-1">XAI Attribution</span>
-                            </div>
+                            <div class="d-flex align-items-center"><i class="fa-solid fa-circle-check text-accent me-3"></i><span class="smaller fw-bold text-uppercase">Multi-Stage Inference</span></div>
+                            <div class="d-flex align-items-center"><i class="fa-solid fa-circle-check text-accent me-3"></i><span class="smaller fw-bold text-uppercase">Longevity Projection</span></div>
                         </div>
                     </div>
 
@@ -36,58 +25,84 @@
                     <div class="col-lg-8 p-5 bg-white">
                         <div class="d-flex justify-content-between align-items-center mb-5">
                             <div>
-                                <h3 class="fw-800 mb-1">Clinical Assessment</h3>
-                                <p class="text-slate small mb-0">Input patient data for AI-driven analysis</p>
+                                <h3 class="fw-900 mb-1 text-primary-dark">Clinical Assessment</h3>
+                                <p class="text-slate small mb-0 fw-bold">Step 1: Patient Biometrics & Symptom Inventory</p>
                             </div>
-                            <span class="stat-pill">SYSTEM V3.0</span>
+                            <span class="stat-pill shadow-sm">v3.5 READY</span>
                         </div>
 
                         <form method="POST" action="">
                             {{ form.hidden_tag() }}
 
-                            <div class="row g-4 mb-5">
+                            <!-- Biometrics Section (High Visibility) -->
+                            <div class="row g-4 mb-5 p-4 rounded-4" style="background-color: #f8fafc; border: 1px solid #e2e8f0;">
                                 <div class="col-12">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Patient Full Name</label>
-                                    {{ form.patient_name(class="form-control", placeholder="Full Legal Name") }}
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">Patient Full Name</label>
+                                    {{ form.patient_name(class="form-control border-secondary border-opacity-25 shadow-sm", placeholder="Enter legal name") }}
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Current Age</label>
-                                    {{ form.age(class="form-control", placeholder="Years") }}
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">Age (Years)</label>
+                                    {{ form.age(class="form-control border-secondary border-opacity-25 shadow-sm") }}
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Biological Gender</label>
-                                    {{ form.sex(class="form-select") }}
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">Biological Gender</label>
+                                    {{ form.sex(class="form-select border-secondary border-opacity-25 shadow-sm") }}
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Blood Pressure Level</label>
-                                    {{ form.bp(class="form-select") }}
+                                <div class="col-md-4">
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">BP Class</label>
+                                    {{ form.bp(class="form-select border-secondary border-opacity-25 shadow-sm") }}
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Cholesterol Profile</label>
-                                    {{ form.cholesterol(class="form-select") }}
+                                <div class="col-md-4">
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">Cholesterol</label>
+                                    {{ form.cholesterol(class="form-select border-secondary border-opacity-25 shadow-sm") }}
                                 </div>
-                                <div class="col-12">
-                                    <label class="form-label small fw-800 text-slate text-uppercase ls-1">Na to K Ratio</label>
-                                    {{ form.na_to_k(class="form-control", placeholder="e.g. 15.6") }}
+                                <div class="col-md-4">
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1">Na to K Ratio</label>
+                                    {{ form.na_to_k(class="form-control border-secondary border-opacity-25 shadow-sm") }}
                                 </div>
                             </div>
 
+                            <!-- Symptoms Section -->
                             <div class="mb-5">
-                                <label class="form-label small fw-800 text-slate text-uppercase ls-1 mb-3">Reported Symptoms (AI Diagnostic Input)</label>
-                                <div class="symptom-grid">
-                                    {% for value, label in form.symptoms.choices %}
-                                    <div class="form-check custom-check">
-                                        <input class="form-check-input d-none" type="checkbox" name="symptoms" value="{{ value }}" id="symp_{{ value }}">
-                                        <label class="form-check-label symptom-tag" for="symp_{{ value }}">
-                                            {{ label }}
-                                        </label>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <label class="form-label small fw-900 text-primary-dark text-uppercase ls-1 mb-0">Symptom Inventory</label>
+                                    <span id="selectedCount" class="badge bg-primary text-white px-4 py-2 rounded-pill fw-900 h6 mb-0">0 SELECTED</span>
+                                </div>
+
+                                <!-- Quick Add (Fixed Contrast) -->
+                                <div class="p-4 bg-white rounded-4 mb-4 border border-2 shadow-sm" style="border-color: #e2e8f0 !important;">
+                                    <h6 class="smaller fw-900 text-primary-dark text-uppercase mb-3"><i class="fa-solid fa-bolt me-2 text-accent"></i>Primary Indicators (Quick Add)</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="button" class="btn btn-sm border-2 px-3 py-2 rounded-pill fw-900 shadow-sm quick-btn text-primary-dark" data-target="fever">+ Fever</button>
+                                        <button type="button" class="btn btn-sm border-2 px-3 py-2 rounded-pill fw-900 shadow-sm quick-btn text-primary-dark" data-target="cough">+ Cough</button>
+                                        <button type="button" class="btn btn-sm border-2 px-3 py-2 rounded-pill fw-900 shadow-sm quick-btn text-primary-dark" data-target="fatigue">+ Fatigue</button>
+                                        <button type="button" class="btn btn-sm border-2 px-3 py-2 rounded-pill fw-900 shadow-sm quick-btn text-primary-dark" data-target="low_mood">+ Low Mood</button>
                                     </div>
-                                    {% endfor %}
+                                </div>
+
+                                <!-- Search -->
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text bg-white border-end-0"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+                                    <input type="text" id="symptomSearch" class="form-control border-start-0 ps-0" placeholder="Search through 30+ diagnostic markers...">
+                                </div>
+                                
+                                <!-- Symptom Grid -->
+                                <div class="symptom-box shadow-inner p-3 rounded-4" style="background: #f1f5f9; border: 1px solid #e2e8f0; max-height: 250px; overflow-y: auto;">
+                                    <div class="row g-2" id="symptomContainer">
+                                        {% for value, label in form.symptoms.choices %}
+                                        <div class="col-auto symptom-item" data-label="{{ label | lower }}">
+                                            <input class="form-check-input d-none" type="checkbox" name="symptoms" value="{{ value }}" id="symp_{{ value }}" onchange="updateVisualState(this)">
+                                            <label class="symptom-pill" for="symp_{{ value }}">
+                                                {{ label }}
+                                            </label>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn-premium btn-accent w-100 py-4 shadow-lg">
-                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Execute Autonomous Analysis
+                            <button type="submit" class="btn-premium btn-accent w-100 py-4 shadow-lg border-0 text-white fw-900 h4">
+                                <i class="fa-solid fa-wand-magic-sparkles me-3"></i> EXECUTE INFERENCE ENGINE
                             </button>
                         </form>
                     </div>
@@ -97,32 +112,77 @@
     </div>
 </div>
 
-<style>
-    .symptom-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+<script>
+function updateVisualState(checkbox) {
+    const label = document.querySelector(`label[for="${checkbox.id}"]`);
+    const countEl = document.getElementById('selectedCount');
+    const checkedCount = document.querySelectorAll('input[name="symptoms"]:checked').length;
+    
+    // Update Counter
+    countEl.innerText = checkedCount + ' SELECTED';
+    
+    // Update Tag Visuals
+    if (checkbox.checked) {
+        label.classList.add('active');
+    } else {
+        label.classList.remove('active');
     }
-    .symptom-tag {
+}
+
+// Handle Quick Buttons
+document.querySelectorAll('.quick-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const targetId = 'symp_' + this.getAttribute('data-target');
+        const checkbox = document.getElementById(targetId);
+        if (checkbox) {
+            checkbox.checked = !checkbox.checked;
+            updateVisualState(checkbox);
+            
+            // Toggle Button Contrast
+            if (checkbox.checked) {
+                this.style.backgroundColor = '#0F172A';
+                this.style.color = '#ffffff';
+                this.style.borderColor = '#0F172A';
+            } else {
+                this.style.backgroundColor = '#ffffff';
+                this.style.color = '#0F172A';
+                this.style.borderColor = '#e2e8f0';
+            }
+        }
+    });
+});
+
+// Search Filter
+document.getElementById('symptomSearch').addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    document.querySelectorAll('.symptom-item').forEach(item => {
+        item.style.display = item.getAttribute('data-label').includes(term) ? 'block' : 'none';
+    });
+});
+</script>
+
+<style>
+    .symptom-pill {
         display: inline-block;
         padding: 0.6rem 1.25rem;
-        background: #f1f5f9;
-        border: 1px solid #e2e8f0;
+        background: #ffffff;
+        border: 2px solid #e2e8f0;
         border-radius: 100px;
         font-size: 0.85rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
+        font-weight: 800;
         color: #475569;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .form-check-input:checked + .symptom-tag {
-        background: var(--brand-accent);
-        border-color: var(--brand-accent);
-        color: white;
-        box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+    .symptom-pill.active {
+        background: var(--brand-accent) !important;
+        border-color: var(--brand-accent) !important;
+        color: white !important;
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        transform: scale(1.05);
     }
-    .symptom-tag:hover {
-        background: #e2e8f0;
-    }
+    .symptom-pill:hover { border-color: var(--brand-accent); background: #f8fafc; }
+    .shadow-inner { box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05); }
+    .fw-900 { font-weight: 900; }
 </style>
 {% endblock %}

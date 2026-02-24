@@ -1,107 +1,128 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="hero-wrapper">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-7 reveal">
-                <div class="stat-pill mb-4 d-inline-block">
-                    <i class="fa-solid fa-sparkles me-2"></i> Next-Gen Clinical Support
-                </div>
-                <h1 class="hero-title">Predictive Analytics <br><span class="text-accent">Redefining Healthcare.</span></h1>
-                <p class="hero-subtitle">Leveraging advanced ensemble learning to bridge the gap between clinical data and life-saving pharmaceutical recommendations.</p>
-                <div class="d-flex gap-3">
-                    {% if session.get('username') %}
-                        <a href="{{ url_for('index1') }}" class="btn-premium px-5 py-3 text-decoration-none">
-                            Launch Assessment <i class="fa-solid fa-chevron-right ms-2 small"></i>
-                        </a>
-                    {% else %}
-                        <a href="{{ url_for('signup') }}" class="btn-premium px-5 py-3 text-decoration-none">
-                            Get Started <i class="fa-solid fa-chevron-right ms-2 small"></i>
-                        </a>
-                        <a href="{{ url_for('login') }}" class="btn btn-link text-primary-dark fw-bold text-decoration-none p-3">
-                            Sign In <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </a>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block floating-icon">
-                <div class="premium-card text-center p-5 border-0 shadow-lg" style="background: linear-gradient(135deg, #10B981, #059669);">
-                    <i class="fa-solid fa-dna fa-6x text-white opacity-50 mb-4"></i>
-                    <h3 class="text-white fw-800">MediAI Engine</h3>
-                    <p class="text-white opacity-75 small">Processing multivariate clinical vectors in real-time.</p>
-                </div>
-            </div>
+<div class="hero-gradient">
+    <div class="container text-center reveal">
+        <div class="d-flex justify-content-center mb-4">
+            <span class="role-badge">Institution: PBR Visvodaya Institute of Technology</span>
+        </div>
+        <h1 class="paper-title">Predictive Analytics <br> in Healthcare <span class="text-gradient-emerald">v3.5</span></h1>
+        <p class="hero-subtitle mx-auto mb-5 text-slate lead" style="max-width: 700px;">An Advanced Clinical Decision Support System (CDSS) leveraging multi-layered ensemble learning for autonomous diagnosis.</p>
+        
+        <div class="d-flex justify-content-center gap-4">
+            <a href="{{ url_for('index1') }}" class="btn-premium shadow-2xl d-flex align-items-center">
+                Execute Research Protocol <i class="fa-solid fa-arrow-right ms-3"></i>
+            </a>
+            <a href="#abstract" class="btn btn-link text-primary-dark fw-800 text-decoration-none p-3">
+                Read Publication <i class="fa-solid fa-chevron-down ms-2 small"></i>
+            </a>
         </div>
     </div>
 </div>
 
-<section class="py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-4 reveal" style="animation-delay: 0.2s">
-                <div class="premium-card h-100">
-                    <div class="bg-soft-accent p-3 rounded-circle d-inline-block mb-4 text-accent">
-                        <i class="fa-solid fa-microchip fa-2x"></i>
-                    </div>
-                    <h4 class="fw-bold">Multi-Model Logic</h4>
-                    <p class="text-slate small">Cross-validation using Random Forest, Decision Tree, and KNN for institutional grade accuracy.</p>
-                </div>
-            </div>
-            <div class="col-md-4 reveal" style="animation-delay: 0.4s">
-                <div class="premium-card h-100">
-                    <div class="bg-soft-primary p-3 rounded-circle d-inline-block mb-4 text-primary">
-                        <i class="fa-solid fa-file-shield fa-2x"></i>
-                    </div>
-                    <h4 class="fw-bold">Data Sovereignty</h4>
-                    <p class="text-slate small">Secure, hashed authentication and encrypted clinical record persistence for patient privacy.</p>
-                </div>
-            </div>
-            <div class="col-md-4 reveal" style="animation-delay: 0.6s">
-                <div class="premium-card h-100">
-                    <div class="bg-soft-accent p-3 rounded-circle d-inline-block mb-4 text-accent">
-                        <i class="fa-solid fa-gauge-high fa-2x"></i>
-                    </div>
-                    <h4 class="fw-bold">XAI Insights</h4>
-                    <p class="text-slate small">Explainable AI visualizations that reveal the "Why" behind every pharmaceutical recommendation.</p>
+<!-- Abstract Block -->
+<section id="abstract" class="py-5">
+    <div class="container py-5 reveal">
+        <div class="premium-abstract shadow-2xl">
+            <div class="abstract-glow"></div>
+            <div class="row position-relative">
+                <div class="col-lg-10">
+                    <h6 class="text-accent fw-800 text-uppercase ls-3 mb-4">Core Abstract</h6>
+                    <p class="display-6 fw-500 text-justify opacity-90" style="line-height: 1.6; font-size: 1.5rem;">
+                        Healthcare systems generate vast clinical datasets. Our system implements a <strong>predictive analytics framework</strong> using 
+                        supervised machine learning to assist in medication selection. By analyzing 
+                        <strong>biometric vectors</strong> (Age, BP, Cholesterol, Na/K Ratio), the CDSS 
+                        identifies probable pathological conditions and suggests validated therapeutic regimens, 
+                        functioning as a vital support tool for practitioners in limited-resource environments.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Research Branding -->
-<section class="bg-white py-5 mt-5">
-    <div class="container text-center py-5 reveal">
-        <h6 class="text-accent fw-800 text-uppercase ls-1 mb-4">A Thesis Project By</h6>
-        <div class="row justify-content-center g-5 align-items-center">
-            <div class="col-md-10">
-                <div class="p-5 bg-main rounded-4">
-                    <h2 class="fw-800 mb-2">PBR Visvodaya Institute of Technology</h2>
-                    <p class="text-slate mb-5">Department of Computer Science & Engineering - AI</p>
-                    
-                    <div class="row g-4 text-center">
-                        <div class="col">
-                            <p class="fw-bold mb-0">P. Ajaya Kumar</p>
-                            <span class="smaller text-muted">Project Guide</span>
-                        </div>
-                        <div class="col">
-                            <p class="fw-bold mb-0">C. Varshitha</p>
-                            <span class="smaller text-muted">Project Lead</span>
-                        </div>
-                        <div class="col">
-                            <p class="fw-bold mb-0">P. Jaini Sai</p>
-                            <span class="smaller text-muted">Lead Researcher</span>
-                        </div>
-                        <div class="col">
-                            <p class="fw-bold mb-0">M. Ananya</p>
-                            <span class="smaller text-muted">Data Scientist</span>
-                        </div>
-                        <div class="col">
-                            <p class="fw-bold mb-0">Shaik Afrin</p>
-                            <span class="smaller text-muted">System Architect</span>
-                        </div>
-                    </div>
+<!-- Bento Box Methodology -->
+<section class="py-5">
+    <div class="container py-5 reveal">
+        <h6 class="text-center text-accent fw-800 text-uppercase ls-3 mb-5">Algorithmic Blueprints</h6>
+        <div class="row g-4">
+            <div class="col-md-8">
+                <div class="bento-card h-100">
+                    <i class="fa-solid fa-microchip fa-3x text-accent mb-4"></i>
+                    <h2 class="fw-800">Weighted Ensemble Core</h2>
+                    <p class="text-slate lead">The system utilizes a majority-voting consensus between Random Forest, Decision Tree, and KNN. Each prediction is cross-validated across these three distinct architectures to ensure institutional-grade precision.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card h-100 bg-primary text-white border-0">
+                    <i class="fa-solid fa-dna fa-3x text-accent mb-4"></i>
+                    <h3 class="fw-800">Biometric Vectors</h3>
+                    <p class="opacity-75">Processing Age, Gender, BP class, and the critical Na-to-K ratio in real-time.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card h-100">
+                    <i class="fa-solid fa-magnifying-glass-chart fa-3x text-primary mb-4"></i>
+                    <h3 class="fw-800">XAI Attribution</h3>
+                    <p class="text-slate">Neural decision factors mapped via Explainable AI to justify every suggestion.</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="bento-card h-100">
+                    <i class="fa-solid fa-shield-virus fa-3x text-accent mb-4"></i>
+                    <h2 class="fw-800">Clinical Reliability</h2>
+                    <p class="text-slate lead">Automated disease inference from symptomatic data minimizes human bias, providing a secondary clinical opinion based on historical patient outcomes and statistical consensus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- High-End Contributor Section -->
+<section class="py-5 mt-5">
+    <div class="container py-5 reveal">
+        <div class="text-center mb-5">
+            <h2 class="fw-900 display-5">Research Contributors</h2>
+            <p class="text-slate">CSE-AI | PBR Visvodaya Institute of Technology</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Faculty -->
+            <div class="col-md-10 mb-4">
+                <div class="contributor-card text-center border-accent border-2">
+                    <span class="role-badge mb-3">Project Supervisor</span>
+                    <h4 class="fw-800 mb-1">P. Ajaya Kumar</h4>
+                    <p class="text-slate mb-0">Assistant Professor, Department of CSE-AI</p>
+                </div>
+            </div>
+            
+            <!-- Students -->
+            <div class="col-md-4">
+                <div class="contributor-card h-100">
+                    <span class="role-badge mb-3">Project Lead</span>
+                    <h5 class="fw-800 mb-1">Chava Varshitha</h5>
+                    <p class="smaller text-slate">Lead Researcher & Data Strategy</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contributor-card h-100">
+                    <span class="role-badge mb-3">ML Architect</span>
+                    <h5 class="fw-800 mb-1">P. Jaini Sai</h5>
+                    <p class="smaller text-slate">Ensemble Engine & Algorithmic Design</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contributor-card h-100">
+                    <span class="role-badge mb-3">Data Scientist</span>
+                    <h5 class="fw-800 mb-1">M. Ananya Chandrika</h5>
+                    <p class="smaller text-slate">Feature Engineering & Preprocessing</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contributor-card h-100">
+                    <span class="role-badge mb-3">System Engineer</span>
+                    <h5 class="fw-800 mb-1">Shaik Afrin</h5>
+                    <p class="smaller text-slate">Full-Stack Implementation & UI/UX</p>
                 </div>
             </div>
         </div>

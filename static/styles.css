@@ -3,90 +3,106 @@
 :root {
     --brand-primary: #0F172A; /* Slate 900 */
     --brand-accent: #10B981;  /* Emerald 500 */
-    --brand-accent-soft: rgba(16, 185, 129, 0.1);
-    --bg-main: #F8FAFC;
-    --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    --premium-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    --text-slate: #475569;
-    --radius-premium: 24px;
+    --brand-accent-soft: rgba(16, 185, 129, 0.08);
+    --bg-main: #FFFFFF;
+    --card-border: rgba(226, 232, 240, 0.6);
+    --premium-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    --text-slate: #64748B;
+    --radius-premium: 32px;
 }
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: var(--bg-main);
+    background-color: #FAFAFA;
     color: var(--brand-primary);
-    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* --- Premium Navbar --- */
-.navbar {
-    background: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
-    padding: 1.25rem 0;
+/* --- Million Dollar Hero --- */
+.hero-gradient {
+    background: radial-gradient(circle at 50% -20%, rgba(16, 185, 129, 0.1), transparent 50%);
+    padding: 160px 0 100px;
 }
 
-.navbar-brand {
+.paper-title {
+    font-size: 4.5rem;
     font-weight: 800;
-    font-size: 1.5rem;
-    letter-spacing: -1px;
+    letter-spacing: -4px;
+    line-height: 0.95;
+    margin-bottom: 2rem;
 }
 
-.nav-link {
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.5rem 1.25rem !important;
-    color: var(--text-slate) !important;
+.text-gradient-emerald {
+    background: linear-gradient(to right, #10B981, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.nav-link:hover {
-    color: var(--brand-accent) !important;
-}
-
-/* --- Hero Section --- */
-.hero-wrapper {
-    position: relative;
-    padding: 120px 0 80px;
-    background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.05), transparent),
-                radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.03), transparent);
-}
-
-.hero-title {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -2px;
-    margin-bottom: 1.5rem;
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--text-slate);
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-}
-
-/* --- Premium Cards --- */
-.premium-card {
-    background: #FFFFFF;
+/* --- Bento Box Methodology --- */
+.bento-card {
+    background: #fff;
+    border: 1px solid var(--card-border);
     border-radius: var(--radius-premium);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    padding: 2.5rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: var(--card-shadow);
+    padding: 3rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.premium-card:hover {
-    transform: translateY(-10px);
+.bento-card:hover {
+    transform: scale(1.02);
     box-shadow: var(--premium-shadow);
-    border-color: var(--brand-accent-soft);
+    border-color: var(--brand-accent);
+}
+
+/* --- Abstract Section --- */
+.premium-abstract {
+    background: var(--brand-primary);
+    color: #fff;
+    border-radius: 40px;
+    padding: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.abstract-glow {
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+}
+
+/* --- Modern Contributor Cards --- */
+.contributor-card {
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.contributor-card:hover {
+    background: var(--brand-accent-soft);
+    border-color: var(--brand-accent);
+}
+
+.role-badge {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--brand-accent);
+    background: var(--brand-accent-soft);
+    padding: 4px 12px;
+    border-radius: 100px;
 }
 
 /* --- Buttons --- */
 .btn-premium {
     background: var(--brand-primary);
-    color: white;
-    padding: 1rem 2.5rem;
+    color: #fff;
+    padding: 1.25rem 3rem;
     border-radius: 100px;
     font-weight: 700;
     transition: all 0.3s ease;
@@ -94,82 +110,17 @@ body {
 }
 
 .btn-premium:hover {
-    background: #1E293B;
-    transform: scale(1.02);
-    color: white;
-    box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.2);
-}
-
-.btn-accent {
-    background: var(--brand-accent);
-    color: white;
-}
-
-.btn-accent:hover {
-    background: #059669;
-    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.3);
+    color: #fff;
 }
 
 /* --- Animations --- */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-}
-
-.floating-icon {
-    animation: float 6s ease-in-out infinite;
-}
-
 .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: revealIn 0.8s forwards;
+    animation: revealIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes revealIn {
+    from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-/* --- Spacing Utilities --- */
-.space-y-2 > * + * { margin-top: 0.5rem; }
-.space-y-3 > * + * { margin-top: 1rem; }
-.space-y-4 > * + * { margin-top: 1.5rem; }
-
-/* --- Responsive Fixes --- */
-@media (max-width: 768px) {
-    .hero-title { font-size: 2.5rem; }
-    .display-3 { font-size: 2.25rem; }
-    .premium-card { padding: 1.5rem; }
-}
-
-.text-balance { text-wrap: balance; }
-.border-dashed { border: 2px dashed rgba(226, 232, 240, 0.8) !important; }
-
-.bg-main { background-color: var(--bg-main); }
-
-/* Fix contrast on dark backgrounds */
-.bg-primary .text-white { color: rgba(255, 255, 255, 0.95) !important; }
-.bg-primary .opacity-75 { opacity: 0.85 !important; }
-
-/* --- Dashboard & Report Specifics --- */
-.stat-pill {
-    background: var(--brand-accent-soft);
-    color: var(--brand-accent);
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.profile-circle {
-    width: 60px; height: 60px;
-    background: linear-gradient(135deg, var(--brand-primary), #334155);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    font-weight: 800;
 }
