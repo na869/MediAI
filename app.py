@@ -75,7 +75,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 dt_model = DecisionTreeClassifier(criterion='gini', max_depth=10, random_state=42).fit(X_train, y_train)
 knn_model = KNeighborsClassifier(n_neighbors=7, weights='distance').fit(X_train, y_train)
 model_path = os.path.join(base_dir, 'drug_rf.sav')
-rf_model = pickle.load(open(model_path, 'rb')) if os.path.exists(model_path) else None
+rf_model = None
+try:
+    if os.path.exists(model_path):
+        with open(model_path, 'rb') as f:
+            rf_model = pickle.load(f)
+except Exception as e:
+    print(f"Warning: Could not load Random Forest model ({e}). Switching to ensemble fallback.")
+    rf_model = None
 
 # ----------------------------
 # Logic & Utility
