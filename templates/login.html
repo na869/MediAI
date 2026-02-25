@@ -1,39 +1,139 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container py-5 mt-lg-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-5 col-xl-4 reveal">
-            <div class="premium-card p-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-800">Welcome Back</h2>
-                    <p class="text-slate small">Sign in to access clinical insights</p>
+<div class="elite-master-container">
+    
+    <!-- 3D BACKGROUND (Three.js Reactor) -->
+    <div id="canvas-container"></div>
+    
+    <!-- Cinematic Vignette -->
+    <div class="blur-bg center-blur"></div>
+
+    <div class="container vh-100 d-flex align-items-center justify-content-center position-relative" style="z-index: 10;">
+        <div class="row w-100 justify-content-center reveal">
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                
+                <div class="elite-glass-panel p-5">
+                    <div class="text-center mb-5">
+                        <div class="d-inline-flex align-items-center px-3 py-1 border border-accent border-opacity-25 rounded-pill mb-4" style="background: rgba(16, 185, 129, 0.05);">
+                            <span class="text-accent fw-800 text-uppercase ls-2" style="font-size: 0.6rem;">Clinical Portal Access</span>
+                        </div>
+                        <h2 class="text-white fw-900 mb-1" style="letter-spacing: -2px;">Welcome <span class="text-accent">Back</span></h2>
+                        <p class="text-white opacity-40 small ls-1">Initialize institutional credentials</p>
+                    </div>
+
+                    <form method="POST" action="">
+                        {{ form.hidden_tag() }}
+                        
+                        <div class="mb-4">
+                            <label class="fw-800 text-uppercase ls-2 text-white opacity-30 mb-2" style="font-size: 0.65rem;">Institutional Identity</label>
+                            {{ form.username(class="elite-input", placeholder="Username") }}
+                        </div>
+
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="fw-800 text-uppercase ls-2 text-white opacity-30" style="font-size: 0.65rem;">Secure Keyphrase</label>
+                                <a href="#" class="text-accent smaller fw-bold text-decoration-none opacity-50 hover-opacity-100 transition-all">Recover?</a>
+                            </div>
+                            {{ form.password(class="elite-input", placeholder="••••••••") }}
+                        </div>
+
+                        <button type="submit" class="btn-elite w-100 py-3 mb-4">
+                            AUTHORIZE SESSION <i class="fa-solid fa-key ms-2"></i>
+                        </button>
+
+                        <p class="text-center smaller text-white opacity-40 mb-0">
+                            Unregistered? <a href="{{ url_for('signup') }}" class="text-accent fw-bold text-decoration-none opacity-80 hover-opacity-100 transition-all">Initialize Account</a>
+                        </p>
+                    </form>
                 </div>
 
-                <form method="POST" action="">
-                    {{ form.hidden_tag() }}
-                    
-                    <div class="mb-3">
-                        <label class="form-label small fw-bold text-slate">Username</label>
-                        <input type="text" name="username" class="form-control" placeholder="Enter username" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <label class="form-label small fw-bold text-slate mb-0">Password</label>
-                            <a href="#" class="text-accent small fw-bold text-decoration-none">Forgot?</a>
-                        </div>
-                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
-                    </div>
-
-                    <button type="submit" class="btn-premium btn-accent w-100 mb-4">Sign In</button>
-
-                    <p class="text-center small text-slate mb-0">
-                        New here? <a href="{{ url_for('signup') }}" class="text-accent fw-bold text-decoration-none">Create an account</a>
-                    </p>
-                </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Three.js Library & Core Engine (Same as Home for consistency) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x020617, 0.002); 
+    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 240;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+    const reactorGroup = new THREE.Group();
+    scene.add(reactorGroup);
+    const createRing = (r, t, c, o) => {
+        const geo = new THREE.TorusGeometry(r, t, 16, 100);
+        const mat = new THREE.MeshBasicMaterial({ color: c, wireframe: true, transparent: true, opacity: o, blending: THREE.AdditiveBlending });
+        return new THREE.Mesh(geo, mat);
+    };
+    const ring1 = createRing(65, 0.4, 0x00F0FF, 0.1);
+    const ring2 = createRing(95, 0.1, 0x10B981, 0.08);
+    ring1.rotation.x = Math.PI / 2; ring2.rotation.y = Math.PI / 2;
+    reactorGroup.add(ring1); reactorGroup.add(ring2);
+    const coreGeo = new THREE.IcosahedronGeometry(24, 2);
+    const coreMat = new THREE.MeshBasicMaterial({ color: 0x10B981, wireframe: true, transparent: true, opacity: 0.15, blending: THREE.AdditiveBlending });
+    const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+    reactorGroup.add(coreMesh);
+    const particleCount = 200; 
+    const particles = new THREE.BufferGeometry(); const posArray = new Float32Array(particleCount * 3);
+    for (let i = 0; i < particleCount; i++) {
+        const r = 100 + Math.random() * 200; 
+        const theta = Math.random() * Math.PI * 2; const phi = Math.acos((Math.random() * 2) - 1);
+        posArray[i * 3] = r * Math.sin(phi) * Math.cos(theta); posArray[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta); posArray[i * 3 + 2] = r * Math.cos(phi);
+    }
+    particles.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const pointCloud = new THREE.Points(particles, new THREE.PointsMaterial({ size: 2, color: 0x10B981, transparent: true, opacity: 0.4 }));
+    reactorGroup.add(pointCloud);
+    let clock = 0;
+    function animate() {
+        requestAnimationFrame(animate);
+        clock += 0.005;
+        reactorGroup.rotation.y += 0.001;
+        ring1.rotation.y -= 0.002; ring2.rotation.x += 0.002;
+        renderer.render(scene, camera);
+    }
+    animate();
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+</script>
+
+<style>
+    body { background: #020617; overflow: hidden; height: 100vh; font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; }
+    .elite-master-container { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+    #canvas-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.6; }
+    .center-blur { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vh; background: radial-gradient(circle, transparent 0%, rgba(2,6,23,0.8) 70%, #020617 100%); z-index: 2; pointer-events: none; }
+    .elite-glass-panel { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; box-shadow: 0 40px 100px rgba(0,0,0,0.5); }
+    .elite-input { width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 1rem; color: white; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; }
+    .elite-input:focus { outline: none; border-color: #10B981; background: rgba(16, 185, 129, 0.05); box-shadow: 0 0 15px rgba(16, 185, 129, 0.1); }
+    .btn-elite { display: inline-flex; align-items: center; justify-content: center; padding: 1.1rem; background: #10B981; color: #020617 !important; font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; border-radius: 4px; border: none; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
+    .btn-elite:hover { background: #34D399; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2); }
+    .text-accent { color: #10B981 !important; }
+    .fw-900 { font-weight: 900; }
+    .ls-2 { letter-spacing: 2px; }
+    .transition-all { transition: all 0.3s ease; }
+    .hover-opacity-100:hover { opacity: 1 !important; }
+    .reveal { animation: revealIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    @keyframes revealIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .navbar { 
+        position: absolute !important; 
+        top: 0; 
+        width: 100%; 
+        z-index: 100; 
+        background: linear-gradient(to bottom, rgba(2,6,23,0.9) 0%, rgba(2,6,23,0.4) 70%, transparent 100%) !important;
+        border-bottom: 1px solid rgba(255,255,255,0.1) !important; 
+        padding: 1.25rem 0; 
+        backdrop-filter: blur(10px);
+    }
+    .navbar-brand span { color: white !important; font-weight: 900; }
+    .nav-link { color: white !important; opacity: 0.8 !important; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; transition: all 0.3s ease; }
+    .nav-link:hover { opacity: 1 !important; color: #10B981 !important; }
+</style>
 {% endblock %}

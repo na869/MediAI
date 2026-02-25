@@ -1,96 +1,95 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container py-5">
+<script>
+    document.querySelector('.navbar').classList.add('navbar-standard');
+</script>
+<div class="container py-5 mt-5">
     <!-- Header -->
-    <div class="row mb-5 animate-fade-in">
+    <div class="row mb-5 reveal">
         <div class="col-lg-8 mx-auto text-center">
-            <span class="badge bg-soft-accent px-3 py-2 rounded-pill fw-bold text-uppercase ls-1 mb-3">Live Analytics V2.0</span>
-            <h1 class="display-5 fw-bold mb-3">System Performance Hub</h1>
-            <p class="lead text-muted">Real-time validation metrics calculated against the <code>drug200.csv</code> clinical dataset.</p>
+            <span class="badge bg-soft-accent text-accent px-3 py-2 rounded-pill fw-900 text-uppercase ls-2 mb-3" style="font-size: 0.65rem;">Institutional Analytics V3.5</span>
+            <h1 class="display-5 fw-900 text-primary-dark mb-3" style="letter-spacing: -2px;">Performance <span class="text-accent">Hub</span></h1>
+            <p class="text-slate lead fw-500">Real-time validation metrics calculated against the clinical ensemble repository.</p>
         </div>
     </div>
 
-    <!-- Live Performance Cards -->
-    <div class="row g-4 animate-fade-in mb-5">
-        {% set rf = metrics.get('Random Forest', metrics.get('Decision Tree')) %}
+    <!-- Metric Cards -->
+    <div class="row g-4 mb-5 reveal" style="animation-delay: 0.1s;">
+        {% set rf = metrics.get('Random Forest') %}
         <div class="col-md-6 col-lg-3">
-            <div class="glass-card h-100 p-4 text-center position-relative">
-                <div class="position-absolute top-0 start-50 translate-middle-x bg-accent" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
+            <div class="glass-card p-4 text-center shadow-sm h-100">
                 <div class="mb-3 text-accent"><i class="fa-solid fa-bullseye fa-3x"></i></div>
-                <h2 class="fw-bold mb-1">{{ rf.accuracy }}%</h2>
-                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">Global Accuracy</p>
+                <h2 class="fw-900 text-primary-dark mb-1">{{ rf.accuracy }}%</h2>
+                <p class="text-slate smaller fw-900 text-uppercase ls-1 mb-0">Global Accuracy</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="glass-card h-100 p-4 text-center position-relative">
-                <div class="position-absolute top-0 start-50 translate-middle-x bg-primary" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
-                <div class="mb-3 text-primary"><i class="fa-solid fa-filter fa-3x"></i></div>
-                <h2 class="fw-bold mb-1">{{ rf.precision }}%</h2>
-                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">Precision Score</p>
+            <div class="glass-card p-4 text-center shadow-sm h-100">
+                <div class="mb-3 text-primary"><i class="fa-solid fa-filter fa-3x" style="color: #0EA5E9;"></i></div>
+                <h2 class="fw-900 text-primary-dark mb-1">{{ rf.precision }}%</h2>
+                <p class="text-slate smaller fw-900 text-uppercase ls-1 mb-0">Precision Score</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="glass-card h-100 p-4 text-center position-relative">
-                <div class="position-absolute top-0 start-50 translate-middle-x bg-info" style="height: 4px; width: 40px; border-radius: 0 0 4px 4px;"></div>
+            <div class="glass-card p-4 text-center shadow-sm h-100">
                 <div class="mb-3 text-info"><i class="fa-solid fa-dna fa-3x"></i></div>
-                <h2 class="fw-bold mb-1">{{ rf.f1 }}%</h2>
-                <p class="text-muted small fw-bold text-uppercase ls-1 mb-0">F1-Score</p>
+                <h2 class="fw-900 text-primary-dark mb-1">{{ rf.f1 }}%</h2>
+                <p class="text-slate smaller fw-900 text-uppercase ls-1 mb-0">F1-Consensus</p>
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="glass-card h-100 p-4 text-center d-flex flex-column justify-content-center bg-primary text-white">
-                <div class="mb-3 opacity-75"><i class="fa-solid fa-server fa-3x"></i></div>
-                <h3 class="fw-bold mb-1">Active</h3>
-                <p class="opacity-75 small fw-bold text-uppercase ls-1 mb-0">Engine Status</p>
+            <!-- Fixed Active Neural Status Card -->
+            <div class="glass-card p-4 text-center d-flex flex-column justify-content-center bg-accent text-white shadow-lg h-100" style="border: none !important;">
+                <div class="mb-3 text-white"><i class="fa-solid fa-microchip fa-3x"></i></div>
+                <h3 class="fw-900 text-white mb-1" style="letter-spacing: 1px;">ACTIVE</h3>
+                <p class="text-white smaller fw-900 text-uppercase ls-1 mb-0" style="opacity: 0.9;">Neural Status</p>
             </div>
         </div>
     </div>
 
-    <!-- Main Analytics Section -->
-    <div class="row g-4 animate-fade-in">
-        <!-- Interactive Chart -->
+    <!-- Charts Section -->
+    <div class="row g-4 reveal" style="animation-delay: 0.2s;">
         <div class="col-lg-8">
-            <div class="glass-card h-100 p-5">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h4 class="fw-bold mb-0">Model Comparison</h4>
-                    <span class="badge bg-soft-primary rounded-pill"><i class="fa-solid fa-chart-simple me-2"></i>Live Data</span>
+            <div class="glass-card p-5 h-100 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h4 class="fw-900 text-primary-dark mb-0">Model Comparison</h4>
+                    <span class="badge bg-light text-primary-dark border rounded-pill px-3 py-2 fw-bold" style="font-size: 0.65rem;">LIVE VALIDATION DATA</span>
                 </div>
-                <div class="chart-container" style="position: relative; height:350px;">
+                <div style="height: 350px;">
                     <canvas id="accuracyChart"></canvas>
                 </div>
             </div>
         </div>
 
-        <!-- Comparative Table -->
         <div class="col-lg-4">
-            <div class="glass-card h-100 p-0 overflow-hidden">
-                <div class="p-4 border-bottom bg-light">
-                    <h5 class="fw-bold mb-0">Validation Matrix</h5>
+            <div class="glass-card p-0 overflow-hidden h-100 border-0 shadow-sm">
+                <div class="p-4 border-bottom border-light bg-light">
+                    <h5 class="fw-900 text-primary-dark mb-0">Validation Matrix</h5>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
-                        <thead class="bg-white">
+                        <thead class="bg-light">
                             <tr>
-                                <th class="ps-4">Model</th>
-                                <th class="text-center">Acc.</th>
-                                <th class="pe-4 text-end">Recall</th>
+                                <th class="ps-4 border-0 smaller text-primary-dark fw-900">ENGINE</th>
+                                <th class="text-center border-0 smaller text-primary-dark fw-900">ACC.</th>
+                                <th class="pe-4 text-end border-0 smaller text-primary-dark fw-900">RECALL</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for name, val in metrics.items() %}
-                            <tr>
-                                <td class="ps-4 fw-bold text-primary small">{{ name }}</td>
-                                <td class="text-center"><span class="badge bg-soft-accent">{{ val.accuracy }}%</span></td>
-                                <td class="pe-4 text-end fw-bold text-muted small">{{ val.recall }}%</td>
+                            <tr class="border-bottom border-light">
+                                <td class="ps-4 fw-800 text-primary-dark small">{{ name }}</td>
+                                <td class="text-center"><span class="badge bg-soft-accent text-accent fw-900 border" style="border-color: rgba(16, 185, 129, 0.2) !important;">{{ val.accuracy }}%</span></td>
+                                <td class="pe-4 text-end fw-800 text-primary-dark opacity-75 small">{{ val.recall }}%</td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
                 </div>
-                <div class="p-4 bg-soft-primary mt-auto">
-                    <p class="smaller mb-0 opacity-75">
-                        <i class="fa-solid fa-circle-info me-2"></i> metrics updated dynamically on page load.
+                <div class="p-4 bg-soft-accent mt-auto border-top border-light">
+                    <p class="smaller mb-0 text-accent fw-bold text-center">
+                        <i class="fa-solid fa-circle-info me-2"></i> DATA SYNCED TO drug200.csv
                     </p>
                 </div>
             </div>
@@ -101,36 +100,36 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('accuracyChart').getContext('2d');
-Chart.defaults.font.family = "'Inter', sans-serif";
-Chart.defaults.color = '#64748b';
+Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
+Chart.defaults.color = '#0F172A';
 
 new Chart(ctx, {
     type: 'bar',
     data: {
         labels: {{ metrics.keys() | list | safe }},
         datasets: [{
-            label: 'Accuracy',
+            label: 'Accuracy %',
             data: [{% for name, val in metrics.items() %}{{ val.accuracy }},{% endfor %}],
-            backgroundColor: '#2ECC71',
-            borderRadius: 6,
-            barPercentage: 0.6
+            backgroundColor: '#10B981',
+            borderRadius: 8,
+            barPercentage: 0.5
         }, {
-            label: 'F1-Score',
+            label: 'F1-Score %',
             data: [{% for name, val in metrics.items() %}{{ val.f1 }},{% endfor %}],
-            backgroundColor: '#34495E',
-            borderRadius: 6,
-            barPercentage: 0.6
+            backgroundColor: '#0F172A',
+            borderRadius: 8,
+            barPercentage: 0.5
         }]
     },
     options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            legend: { position: 'top', align: 'end', labels: { usePointStyle: true, boxWidth: 8 } }
+            legend: { position: 'top', align: 'end', labels: { color: '#0F172A', usePointStyle: true, boxWidth: 8, font: { weight: 'bold' } } }
         },
         scales: {
-            y: { beginAtZero: true, max: 100, grid: { borderDash: [4, 4], color: '#f1f5f9' } },
-            x: { grid: { display: false } }
+            y: { beginAtZero: true, max: 100, grid: { color: '#f1f5f9' }, ticks: { font: { weight: 'bold' } } },
+            x: { grid: { display: false }, ticks: { font: { weight: 'bold' } } }
         }
     }
 });

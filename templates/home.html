@@ -1,131 +1,283 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="hero-gradient">
-    <div class="container text-center reveal">
-        <div class="d-flex justify-content-center mb-4">
-            <span class="role-badge">Institution: PBR Visvodaya Institute of Technology</span>
+<div class="elite-master-container">
+    
+    <!-- 3D BACKGROUND (Three.js Reactor) -->
+    <div id="canvas-container"></div>
+    
+    <!-- GRADIENT & BLUR FADES (Cinematic Vignette) -->
+    <div class="blur-bg left-blur"></div>
+    <div class="blur-bg right-blur"></div>
+
+    <!-- LEFT CONTENT PANEL (Hero & Abstract) -->
+    <div class="content-panel left-content reveal">
+        <div class="d-flex flex-column h-100 justify-content-center">
+            
+            <div class="mb-5">
+                <div class="d-inline-flex align-items-center px-3 py-1 border border-accent border-opacity-25 rounded-pill mb-4" style="background: rgba(16, 185, 129, 0.05);">
+                    <div class="pulse-dot me-2"></div>
+                    <span class="text-accent fw-800 text-uppercase ls-2" style="font-size: 0.6rem;">Institution: PBR Visvodaya</span>
+                </div>
+                
+                <h1 class="fw-300 text-white mb-3" style="font-size: 3.5rem; letter-spacing: -2px; line-height: 1.1;">
+                    Predictive <br>
+                    <span class="fw-900 text-accent">Healthcare <span style="font-size: 1.5rem; vertical-align: super;">v3.5</span></span>
+                </h1>
+                
+                <p class="text-white opacity-60 fw-400 mb-5" style="font-size: 1.05rem; line-height: 1.6; max-width: 90%;">
+                    An Advanced Clinical Decision Support System (CDSS) leveraging multi-layered ensemble learning for autonomous diagnosis.
+                </p>
+                
+                <a href="{{ url_for('index1') }}" class="btn-elite shadow-lg">
+                    EXECUTE RESEARCH PROTOCOL <i class="fa-solid fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+
+            <div class="mt-4 pt-5 border-top border-white border-opacity-10">
+                <h6 class="text-white opacity-40 fw-800 text-uppercase ls-2 mb-3" style="font-size: 0.65rem;">Core Abstract</h6>
+                <p class="text-white opacity-70 mb-0 fw-400" style="font-size: 0.85rem; line-height: 1.8; max-width: 95%;">
+                    Healthcare systems generate vast clinical datasets. Our system implements a predictive analytics framework using supervised machine learning to assist in medication selection. By analyzing biometric vectors (Age, BP, Cholesterol, Na/K Ratio), the CDSS identifies probable pathological conditions and suggests validated therapeutic regimens, functioning as a vital support tool for practitioners in limited-resource environments.
+                </p>
+            </div>
+            
         </div>
-        <h1 class="paper-title">Predictive Analytics <br> in Healthcare <span class="text-gradient-emerald">v3.5</span></h1>
-        <p class="hero-subtitle mx-auto mb-5 text-slate lead" style="max-width: 700px;">An Advanced Clinical Decision Support System (CDSS) leveraging multi-layered ensemble learning for autonomous diagnosis.</p>
-        
-        <div class="d-flex justify-content-center gap-4">
-            <a href="{{ url_for('index1') }}" class="btn-premium shadow-2xl d-flex align-items-center">
-                Execute Research Protocol <i class="fa-solid fa-arrow-right ms-3"></i>
-            </a>
-            <a href="#abstract" class="btn btn-link text-primary-dark fw-800 text-decoration-none p-3">
-                Read Publication <i class="fa-solid fa-chevron-down ms-2 small"></i>
-            </a>
+    </div>
+
+    <!-- RIGHT CONTENT PANEL (Blueprints & Team) -->
+    <div class="content-panel right-content reveal" style="animation-delay: 0.2s;">
+        <div class="d-flex flex-column h-100 justify-content-center">
+            
+            <!-- Algorithmic Blueprints -->
+            <div class="mb-5">
+                <h6 class="text-white opacity-40 fw-800 text-uppercase ls-2 mb-4" style="font-size: 0.65rem;">Algorithmic Blueprints</h6>
+                
+                <div class="mb-3">
+                    <h6 class="text-white fw-700 mb-1" style="font-size: 0.85rem;"><span class="text-accent me-2 opacity-70">01</span> Weighted Ensemble Core</h6>
+                    <p class="text-white opacity-50 mb-0 ps-4 ms-1" style="font-size: 0.75rem; line-height: 1.5;">The system utilizes a majority-voting consensus between Random Forest, Decision Tree, and KNN to ensure institutional-grade precision.</p>
+                </div>
+                
+                <div class="mb-3">
+                    <h6 class="text-white fw-700 mb-1" style="font-size: 0.85rem;"><span class="text-accent me-2 opacity-70">02</span> Biometric Vectors</h6>
+                    <p class="text-white opacity-50 mb-0 ps-4 ms-1" style="font-size: 0.75rem; line-height: 1.5;">Processing Age, Gender, BP class, and the critical Na-to-K ratio in real-time.</p>
+                </div>
+
+                <div class="mb-3">
+                    <h6 class="text-white fw-700 mb-1" style="font-size: 0.85rem;"><span class="text-accent me-2 opacity-70">03</span> XAI Attribution</h6>
+                    <p class="text-white opacity-50 mb-0 ps-4 ms-1" style="font-size: 0.75rem; line-height: 1.5;">Neural decision factors mapped via Explainable AI to justify every suggestion.</p>
+                </div>
+
+                <div>
+                    <h6 class="text-white fw-700 mb-1" style="font-size: 0.85rem;"><span class="text-accent me-2 opacity-70">04</span> Clinical Reliability</h6>
+                    <p class="text-white opacity-50 mb-0 ps-4 ms-1" style="font-size: 0.75rem; line-height: 1.5;">Automated disease inference from symptomatic data minimizes human bias, providing a secondary clinical opinion.</p>
+                </div>
+            </div>
+
+            <!-- Research Team -->
+            <div class="mt-4 pt-5 border-top border-white border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h6 class="text-white opacity-40 fw-800 text-uppercase ls-2 mb-0" style="font-size: 0.65rem;">Research Contributors</h6>
+                    <span class="badge border border-white border-opacity-20 text-white opacity-50 fw-700 rounded-1 px-2" style="font-size: 0.55rem;">CSE-AI</span>
+                </div>
+                
+                <div class="mb-4">
+                    <h6 class="text-white fw-800 mb-0" style="font-size: 1rem;">P. Ajaya Kumar</h6>
+                    <p class="text-accent fw-700 mb-0 text-uppercase ls-1" style="font-size: 0.65rem;">Project Supervisor | Assistant Professor</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-6">
+                        <p class="text-white fw-700 mb-0" style="font-size: 0.8rem;">Chava Varshitha</p>
+                        <p class="text-white opacity-40 mb-0 fw-500" style="font-size: 0.65rem;">Lead Researcher & Data</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-white fw-700 mb-0" style="font-size: 0.8rem;">P. Jaini Sai</p>
+                        <p class="text-white opacity-40 mb-0 fw-500" style="font-size: 0.65rem;">ML Architect & Ensemble</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-white fw-700 mb-0" style="font-size: 0.8rem;">M. Ananya Chandrika</p>
+                        <p class="text-white opacity-40 mb-0 fw-500" style="font-size: 0.65rem;">Feature Engineering</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-white fw-700 mb-0" style="font-size: 0.8rem;">Shaik Afrin</p>
+                        <p class="text-white opacity-40 mb-0 fw-500" style="font-size: 0.65rem;">Full-Stack & UI/UX</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-bar d-flex justify-content-between align-items-center px-5 py-4 w-100">
+        <p class="text-white opacity-30 fw-600 text-uppercase ls-2 mb-0" style="font-size: 10px; font-family: monospace;">
+            &copy; 2026 MediAI Solutions | PBR Visvodaya Institute of Technology Research
+        </p>
+        <div class="d-flex gap-4">
+            <span class="text-white opacity-20 fw-600 text-uppercase ls-1 mb-0" style="font-size: 10px; font-family: monospace;">STATUS: SECURE</span>
+            <span class="text-white opacity-20 fw-600 text-uppercase ls-1 mb-0" style="font-size: 10px; font-family: monospace;">ACCURACY: 98.5%</span>
         </div>
     </div>
 </div>
 
-<!-- Abstract Block -->
-<section id="abstract" class="py-5">
-    <div class="container py-5 reveal">
-        <div class="premium-abstract shadow-2xl">
-            <div class="abstract-glow"></div>
-            <div class="row position-relative">
-                <div class="col-lg-10">
-                    <h6 class="text-accent fw-800 text-uppercase ls-3 mb-4">Core Abstract</h6>
-                    <p class="display-6 fw-500 text-justify opacity-90" style="line-height: 1.6; font-size: 1.5rem;">
-                        Healthcare systems generate vast clinical datasets. Our system implements a <strong>predictive analytics framework</strong> using 
-                        supervised machine learning to assist in medication selection. By analyzing 
-                        <strong>biometric vectors</strong> (Age, BP, Cholesterol, Na/K Ratio), the CDSS 
-                        identifies probable pathological conditions and suggests validated therapeutic regimens, 
-                        functioning as a vital support tool for practitioners in limited-resource environments.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Three.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-<!-- Bento Box Methodology -->
-<section class="py-5">
-    <div class="container py-5 reveal">
-        <h6 class="text-center text-accent fw-800 text-uppercase ls-3 mb-5">Algorithmic Blueprints</h6>
-        <div class="row g-4">
-            <div class="col-md-8">
-                <div class="bento-card h-100">
-                    <i class="fa-solid fa-microchip fa-3x text-accent mb-4"></i>
-                    <h2 class="fw-800">Weighted Ensemble Core</h2>
-                    <p class="text-slate lead">The system utilizes a majority-voting consensus between Random Forest, Decision Tree, and KNN. Each prediction is cross-validated across these three distinct architectures to ensure institutional-grade precision.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bento-card h-100 bg-primary text-white border-0">
-                    <i class="fa-solid fa-dna fa-3x text-accent mb-4"></i>
-                    <h3 class="fw-800">Biometric Vectors</h3>
-                    <p class="opacity-75">Processing Age, Gender, BP class, and the critical Na-to-K ratio in real-time.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bento-card h-100">
-                    <i class="fa-solid fa-magnifying-glass-chart fa-3x text-primary mb-4"></i>
-                    <h3 class="fw-800">XAI Attribution</h3>
-                    <p class="text-slate">Neural decision factors mapped via Explainable AI to justify every suggestion.</p>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="bento-card h-100">
-                    <i class="fa-solid fa-shield-virus fa-3x text-accent mb-4"></i>
-                    <h2 class="fw-800">Clinical Reliability</h2>
-                    <p class="text-slate lead">Automated disease inference from symptomatic data minimizes human bias, providing a secondary clinical opinion based on historical patient outcomes and statistical consensus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<script>
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x020617, 0.002); 
+    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 240;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+    
+    const reactorGroup = new THREE.Group();
+    scene.add(reactorGroup);
+    
+    const createRing = (radius, tube, color, opacity) => {
+        const geo = new THREE.TorusGeometry(radius, tube, 16, 100);
+        const mat = new THREE.MeshBasicMaterial({ color: color, wireframe: true, transparent: true, opacity: opacity, blending: THREE.AdditiveBlending });
+        return new THREE.Mesh(geo, mat);
+    };
+    const ring1 = createRing(65, 0.4, 0x00F0FF, 0.15);
+    const ring2 = createRing(95, 0.1, 0x10B981, 0.1);
+    ring1.rotation.x = Math.PI / 2; ring2.rotation.y = Math.PI / 2;
+    reactorGroup.add(ring1); reactorGroup.add(ring2);
+    
+    const coreGeo = new THREE.IcosahedronGeometry(24, 2);
+    const coreMat = new THREE.MeshBasicMaterial({ color: 0x10B981, wireframe: true, transparent: true, opacity: 0.2, blending: THREE.AdditiveBlending });
+    const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+    reactorGroup.add(coreMesh);
+    
+    const particleCount = 400; const maxDist = 45; 
+    const particles = new THREE.BufferGeometry(); const posArray = new Float32Array(particleCount * 3);
+    const velocities = []; const originalPos = []; 
+    for (let i = 0; i < particleCount; i++) {
+        const r = 50 + (180 * Math.pow(Math.random(), 0.8)); 
+        const theta = Math.random() * Math.PI * 2; const phi = Math.acos((Math.random() * 2) - 1);
+        const x = r * Math.sin(phi) * Math.cos(theta); const y = r * Math.sin(phi) * Math.sin(theta); const z = r * Math.cos(phi);
+        posArray[i * 3] = x; posArray[i * 3 + 1] = y; posArray[i * 3 + 2] = z;
+        originalPos.push({ x, y, z }); velocities.push({ x: (Math.random() - 0.5) * 0.1, y: (Math.random() - 0.5) * 0.1, z: (Math.random() - 0.5) * 0.1 });
+    }
+    particles.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const pMaterial = new THREE.PointsMaterial({ size: 2, color: 0x10B981, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending });
+    const pointCloud = new THREE.Points(particles, pMaterial);
+    reactorGroup.add(pointCloud);
+    
+    const lineGeometry = new THREE.BufferGeometry();
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x10B981, transparent: true, opacity: 0.08, blending: THREE.AdditiveBlending });
+    const linesMesh = new THREE.LineSegments(lineGeometry, lineMaterial);
+    reactorGroup.add(linesMesh);
+    
+    const mouse = new THREE.Vector2();
+    document.addEventListener('mousemove', (e) => {
+        mouse.x = (e.clientX / window.innerWidth) * 2 - 1; mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    });
+    
+    let clock = 0;
+    function animate() {
+        requestAnimationFrame(animate);
+        clock += 0.01;
+        ring1.rotation.y -= 0.005; ring2.rotation.x += 0.004;
+        const pos = pointCloud.geometry.attributes.position.array;
+        const linePos = [];
+        for (let i = 0; i < particleCount; i++) {
+            pos[i*3] += velocities[i].x; pos[i*3+1] += velocities[i].y; pos[i*3+2] += velocities[i].z;
+            const orig = originalPos[i];
+            pos[i*3] += (orig.x - pos[i*3]) * 0.008; pos[i*3+1] += (orig.y - pos[i*3+1]) * 0.008; pos[i*3+2] += (orig.z - pos[i*3+2]) * 0.008;
+            for (let j = i + 1; j < particleCount; j += 10) {
+                const dx = pos[i*3] - pos[j*3]; const dy = pos[i*3+1] - pos[j*3+1]; const dz = pos[i*3+2] - pos[j*3+2];
+                if (dx*dx + dy*dy + dz*dz < maxDist*maxDist) {
+                    linePos.push(pos[i*3], pos[i*3+1], pos[i*3+2], pos[j*3], pos[j*3+1], pos[j*3+2]);
+                }
+            }
+        }
+        pointCloud.geometry.attributes.position.needsUpdate = true;
+        linesMesh.geometry.setAttribute('position', new THREE.Float32BufferAttribute(linePos, 3));
+        reactorGroup.rotation.x += (mouse.y * 0.1 - reactorGroup.rotation.x) * 0.05;
+        reactorGroup.rotation.y += (mouse.x * 0.1 + (clock * 0.1) - reactorGroup.rotation.y) * 0.05;
+        renderer.render(scene, camera);
+    }
+    animate();
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+</script>
 
-<!-- High-End Contributor Section -->
-<section class="py-5 mt-5">
-    <div class="container py-5 reveal">
-        <div class="text-center mb-5">
-            <h2 class="fw-900 display-5">Research Contributors</h2>
-            <p class="text-slate">CSE-AI | PBR Visvodaya Institute of Technology</p>
-        </div>
-        
-        <div class="row g-4 justify-content-center">
-            <!-- Faculty -->
-            <div class="col-md-10 mb-4">
-                <div class="contributor-card text-center border-accent border-2">
-                    <span class="role-badge mb-3">Project Supervisor</span>
-                    <h4 class="fw-800 mb-1">P. Ajaya Kumar</h4>
-                    <p class="text-slate mb-0">Assistant Professor, Department of CSE-AI</p>
-                </div>
-            </div>
-            
-            <!-- Students -->
-            <div class="col-md-4">
-                <div class="contributor-card h-100">
-                    <span class="role-badge mb-3">Project Lead</span>
-                    <h5 class="fw-800 mb-1">Chava Varshitha</h5>
-                    <p class="smaller text-slate">Lead Researcher & Data Strategy</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="contributor-card h-100">
-                    <span class="role-badge mb-3">ML Architect</span>
-                    <h5 class="fw-800 mb-1">P. Jaini Sai</h5>
-                    <p class="smaller text-slate">Ensemble Engine & Algorithmic Design</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="contributor-card h-100">
-                    <span class="role-badge mb-3">Data Scientist</span>
-                    <h5 class="fw-800 mb-1">M. Ananya Chandrika</h5>
-                    <p class="smaller text-slate">Feature Engineering & Preprocessing</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="contributor-card h-100">
-                    <span class="role-badge mb-3">System Engineer</span>
-                    <h5 class="fw-800 mb-1">Shaik Afrin</h5>
-                    <p class="smaller text-slate">Full-Stack Implementation & UI/UX</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<style>
+    body { background: #020617; overflow: hidden; height: 100vh; font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; }
+    
+    .elite-master-container { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+    
+    #canvas-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    
+    /* Cinematic Vignette Fade */
+    .blur-bg { position: absolute; top: 0; width: 550px; height: 100vh; z-index: 2; pointer-events: none; }
+    .left-blur {
+        left: 0;
+        background: linear-gradient(to right, rgba(2,6,23,0.95) 30%, rgba(2,6,23,0.6) 75%, transparent);
+        backdrop-filter: blur(16px);
+        -webkit-mask-image: linear-gradient(to right, black 65%, transparent);
+    }
+    .right-blur {
+        right: 0;
+        background: linear-gradient(to left, rgba(2,6,23,0.95) 30%, rgba(2,6,23,0.6) 75%, transparent);
+        backdrop-filter: blur(16px);
+        -webkit-mask-image: linear-gradient(to left, black 65%, transparent);
+    }
+
+    /* Content Layout */
+    .content-panel {
+        position: absolute; top: 0; height: 100vh; width: 500px; z-index: 10;
+        pointer-events: auto; padding: 90px 3rem 60px 4rem; display: flex; flex-direction: column; justify-content: center;
+    }
+    .left-content { left: 0; }
+    .right-content { right: 0; padding: 90px 4rem 60px 3rem; }
+
+    .footer-bar { position: absolute; bottom: 0; left: 0; z-index: 20; pointer-events: none; }
+
+    /* Base Nav Overrides */
+    .navbar { 
+        position: absolute !important; 
+        top: 0; 
+        width: 100%; 
+        z-index: 100; 
+        background: linear-gradient(to bottom, rgba(2,6,23,0.9) 0%, rgba(2,6,23,0.4) 70%, transparent 100%) !important;
+        border-bottom: 1px solid rgba(255,255,255,0.1) !important; 
+        padding: 1.25rem 0; 
+        backdrop-filter: blur(10px);
+    }
+    .navbar-brand span { color: white !important; font-weight: 900; }
+    .nav-link { color: white !important; opacity: 0.8 !important; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; transition: all 0.3s ease; }
+    .nav-link:hover { opacity: 1 !important; color: #10B981 !important; }
+
+    /* Typography & Utilities */
+    .text-accent { color: #10B981 !important; }
+    .fw-300 { font-weight: 300; }
+    .fw-400 { font-weight: 400; }
+    .fw-500 { font-weight: 500; }
+    .fw-600 { font-weight: 600; }
+    .fw-700 { font-weight: 700; }
+    .fw-800 { font-weight: 800; }
+    .fw-900 { font-weight: 900; }
+    .ls-1 { letter-spacing: 1px; }
+    .ls-2 { letter-spacing: 2px; }
+    .ls-3 { letter-spacing: 3px; }
+
+    .pulse-dot { width: 6px; height: 6px; background: #10B981; border-radius: 50%; box-shadow: 0 0 0 rgba(16, 185, 129, 0.4); animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); } 70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); } 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); } }
+
+    .btn-elite {
+        display: inline-flex; align-items: center; padding: 1.1rem 2.2rem; background: #10B981; color: #020617 !important;
+        font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; border-radius: 4px; text-decoration: none; transition: all 0.3s ease;
+    }
+    .btn-elite:hover { background: #34D399; box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); transform: translateY(-2px); }
+
+    .reveal { animation: revealIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+    @keyframes revealIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+</style>
 {% endblock %}
